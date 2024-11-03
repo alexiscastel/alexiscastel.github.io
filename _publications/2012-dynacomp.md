@@ -3,7 +3,7 @@ title: "Vibroacoustic simulation of heterogeneous multilayer composite plates in
 collection: publications
 category: conferences
 permalink: /publication/2012-dynacomp
-# excerpt: 'This paper is about fixing template issue #693.'
+excerpt: #'This paper is about fixing template issue #693.'
 date: 2012
 venue: 'GitHub Journal of Bugs'
 paperurl: 'https://hal.science/hal-02559638/'
