@@ -3,8 +3,7 @@ title: "Vibroacoustic simulation of heterogeneous multilayer composite plates in
 collection: publications
 category: conferences
 permalink: /publication/2012-dynacomp
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2012-04-01
+date: 2012
 venue: 'Dynacomp'
 paperurl: #'https://hal.science/hal-02559638/'
 citation: 'Castel, A. et al. (2012). &quot;Vibroacoustic simulation of heterogeneous multilayer composite plates involving low Young&apos;s modulus viscoelastic materials.&quot; <i>Dynacomp</i>.'
