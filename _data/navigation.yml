@@ -20,8 +20,8 @@ main:
 #  - title: "Blog Posts"
 #    url: /year-archive/
     
-#  - title: "CV"
-#    url: /cv/
+  - title: "CV"
+    url: 'https://www.linkedin.com/in/alexiscastel/'
     
 #  - title: "Guide"
 #    url: /markdown/
