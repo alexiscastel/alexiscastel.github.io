@@ -2,7 +2,7 @@
 title: "A multilayer anisotropic plate model with warping functions for the study of vibrations reformulated from Woodcock's work."
 collection: publications
 category: manuscripts
-permalink: /publication/2012-multilayer-anisotropic-plate-model
+permalink: /publication/2012-2-20-multilayer-anisotropic-plate-model
 date: 2012-2-20
 venue: 'Journal of sound and vibration'
 paperurl: 'Journal of sound and vibration'
