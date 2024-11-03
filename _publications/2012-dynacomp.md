@@ -5,6 +5,7 @@ category: conferences
 permalink: /publication/2012-dynacomp
 date: 2012
 venue: 'Dynacomp'
+excerpt: 'The vibroacoustic behavior of composite multilayered plates involving high Young’s modulus ratios between adjacent layers, like sandwich panels and passive constrained layer damped plates, is studied. As classical plate models give poor results with such structures, a specific model has been used. It is an equivalent single layer model, with a five unknown displacement field which takes into account a variation of transverse shear strains into the thickness. A classical sandwich structure is simulated, its natural frequencies are compared to those given by other models and a 3D finite element simulation which is taken as reference. A second study concerns a composite plate with a damping patch in which the constraining layer is a unidirectional ply. Comparisons for two orientations of this ply (0° or 90°) are presented.'
 paperurl: #'https://hal.science/hal-02559638/'
 citation: 'Castel, A. et al. (2012). &quot;Vibroacoustic simulation of heterogeneous multilayer composite plates involving low Young&apos;s modulus viscoelastic materials.&quot; <i>Dynacomp</i>.'
 ---
