@@ -2,7 +2,7 @@
 title: "H-Matrix BEM application and validation for space habitat"
 collection: publications
 category: conferences
-permalink: /publication/2023-05-25-H-Matrix-BEM-application-validation-space-habitat.md
+permalink: /publication/2023-05-25-H-Matrix-BEM-application-validation-space-habitat
 date: 2023-05-25
 venue: 'NOISE-CON23'
 paperurl: 'https://www.ingentaconnect.com/content/ince/incecp/2023/00000266/00000002/art00031'
