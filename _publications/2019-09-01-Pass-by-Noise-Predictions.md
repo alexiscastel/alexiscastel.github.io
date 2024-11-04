@@ -2,7 +2,7 @@
 title: "A pass-by noise prediction method based on source-path-receiver approach combining simulation and test data"
 collection: publications
 category: manuscripts
-permalink: /publication/2019-09-01-Pass-by-Noise-Predictions.md
+permalink: /publication/2019-09-01-Pass-by-Noise-Predictions
 date: 2019-09-01
 venue: 'SAE International Journal of Advances and Current Practices in Mobility'
 paperurl: 'https://www.sae.org/publications/technical-papers/content/2019-26-0188/'
