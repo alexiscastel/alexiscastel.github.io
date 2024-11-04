@@ -1,0 +1,13 @@
+---
+title: "A comparison between models for the study of static and dynamic behavior of heterogeneous multilayer composite plates"
+collection: publications
+category: conferences
+permalink: /publication/2013-07-31-Dynacomp
+date: 2013-07-31
+venue: 'Dynacomp'
+#excerpt: ''
+paperurl: /files/AA-DYNACOMP-2013.pdf
+citation: 'Castel, A. et al. (2013). &quot;A comparison between models for the study of static and dynamic behavior of heterogeneous multilayer composite plates.&quot; <i>Dynacomp</i>.'
+---
+
+In composite plate structures, it is common to combine different materials with very different Young's moduli and densities. Damping treatments can also be added to prevent high levels of vibration. For discretized problems, the static and dynamic behavior of such heterogeneous structures can be carried out with the 3D elasticity theory but this often leads to very large systems. Therefore, plate theories and particularly equivalent single layer models are often preferred. Classical plate theories have then been adapted to these particular structures using shear correction factors. Higher order shear deformation theories, and more recently transverse shear warping functions, have been proposed. In this work, a model, in which the shear variations through the thickness are described by means of warping functions, is presented. It can handle warping functions proposed by different authors and also the classical theories (Love-Kirchhoff, Mindlin-Reissner and Reddy). To illustrate the behavior of these theories, two studies are presented: - A sandwich structure with a varying young modulus ratio between the layers is studied using Navier's procedure. Static deflection, shear stress variation through the thickness, and natural frequencies are presented. - A composite plate covered over 40\% of its surface with a constrained layer damping patch is studied. Mean square velocity is computed and compared over a frequency range. Results are also compared with 3D finite element computations.
