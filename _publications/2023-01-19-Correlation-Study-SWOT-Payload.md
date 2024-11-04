@@ -6,7 +6,7 @@ permalink: /publication/2023-01-19-Correlation-Study-SWOT-Payload
 date: 2023-01-19
 venue: 'AIAA SCITECH 2023 Forum'
 #excerpt: ''
-#paperurl: /files/AA-DYNACOMP-2012-62.pdf
+paperurl: 'https://arc.aiaa.org/doi/abs/10.2514/6.2023-1520'
 citation: 'Lin, L., Castel, A., Kissil, A., Wang, G., and Gardner, B. (2023). &quot;Correlation Study of SWOT Payload Acoustic Prediction and Test.&quot; <i>AIAA SCITECH 2023 Forum</i>. AIAA 2023-1520'
 ---
 
