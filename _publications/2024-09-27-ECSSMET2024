@@ -1,0 +1,14 @@
+---
+title: "Bayesian Optimization for Rapid Probabilistic Estimations of Overall Level on Frequency Response Models"
+collection: publications
+category: conferences
+permalink: /publication/2024-09-27-ECSSMET2024
+date: 2024-09-27
+venue: 'ECSSMET 2024'
+#excerpt: ''
+paperurl: #/files/AA-DYNACOMP-2012-62.pdf
+citation: 'Castel, A. et al. (2024). &quot;Bayesian Optimization for Rapid Probabilistic Estimations of Overall Level on Frequency Response Models.&quot; <i>ECSSMET 2024</i>.'
+---
+
+Traditionally, frequency response models are solved using either a constant bandwidth or an n-th octave band. For both vibration and acoustic analyses, it is commonly known that one is expected to solve a model with a sufficiently narrow band to ensure the overall response of the mechanical system is accurately captured. However, when specifically capturing the overall level, one needs to ensure the highest values of the response curve are correctly captured while a controlled amount of uncertainty can be accepted when estimating the lowest response point of the curve.
+We propose a Bayesian optimization technique designed to capture the overall level using a Matern kernel. The proposed method enables estimations of the overall levels of a response curve using approximately five times fewer frequency points while providing a given uncertainty on the overall level.
