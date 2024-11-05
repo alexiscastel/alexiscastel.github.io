@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Train counter"
+excerpt: "Using Bayesian classifiers to detect and count trains using a microphone<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
