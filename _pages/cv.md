@@ -30,7 +30,7 @@ Work experience
   * Feature prototyping using the Python environment as part of the methodology development, allowing for early acceptance from the customer before feature development
 
 * 2021-2022: Technical Fellow - <i>ZIN Technologies | Middleburg Heights, OH, USA</i>
-* 2018 - 2021: Lead Vibro-Acoustics Engineer
+  2018 - 2021: Lead Vibro-Acoustics Engineer
   * NASA SLS Universal Stage Adapter (USA) acoustic simulation lead for Payload Environmental Control. Creates simulation models using VA One and FEMAP NASTRAN for acoustic prediction for launch vehicle lift off and transonic environment simulation.
   * Applied NASA’s processes from handbooks and standards for:
     * Simulation model processes
@@ -47,7 +47,7 @@ Work experience
     * Led the team through the development of an aeroacoustic vent simulation using OpenFOAM.
 
 * 2017-2018: Senior Application Engineer - <i>ESI North America | Farmington Hills, MI, USA</i>
-* 2014-2017: Application Engineer	
+  2014-2017: Application Engineer	
   * Plan, budget and execute vibro-acoustics engineering services projects using VA One solutions for the full frequency spectrum. Projects involve a wide range of customers from off-highway to aerospace industries.
   * Developed new simulation processes in coordination with the research and development team to meet customers needs, e.g. Direct Field Acoustic Testing (DFAT) simulation, reduced hybrid model for launch   vehicles and automotive pass-by noise simulation. Publish and present innovative simulation methods in technical conferences organized by societies of experts.
   * Provided remote and on site customer support for ESI Group vibro-acoustics software solutions to North American customers. This includes providing assistance for software usage and academic background.
