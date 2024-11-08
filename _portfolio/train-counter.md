@@ -1,6 +1,7 @@
 ---
 title: "Train counter"
 excerpt: "Using Bayesian classifiers to detect and count trains using a microphone.<br/><img src='/images/train-500x300.jpg'>"
+permalink: /portfolio/train-counter
 collection: portfolio
 ---
 
