@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Mechanics and Energetic, University of Burgundy, France, 2013
+* Master of Business Administration, University of Burgundy, France, 2013
+* Master of Science (Material sciences, Acoustic, Vibration, Numerical methods), University of Burgundy, France, 2010
+* Master of Engineering, University of Burgundy, France, 2010
 
 Work experience
 ======
@@ -34,31 +35,35 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
+* Vibro - acoustics simulation 
+  * Finite Element Method
+  * Boundary Element Method
+  * Statistical Energy Analysis
+  * Hybrid FE-SEA Method
+  * Shock simulation
+* Experimental skills
+  * Data acquisition
+  * Signal Processing
+  * Transfer Path Analysis
+  * Testing experience in high power reverberation room
+* Structural Dynamics 
+* Numerical Methods
+* High Performance Computing
+* Mechanical Modeling Research
+* Scientific redaction
+* Project management
+* Procedure/Operations Development
+* Report Development
+* Languages: English & French
+* ME Software: VA One, NOVA, FOAM-X, NX NASTRAN, VPS, CATIA V5, Solidworks
+* Computer Languages: Python, Matlab, Labview, Visual Basic
+* 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Founding member and President of <i>La Petite Ecole Française de Cleveland</i>, a non-profit dedicated to teaching French to the children of French speaking families in the region of Cleveland.
