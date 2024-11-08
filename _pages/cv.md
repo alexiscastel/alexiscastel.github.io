@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+You can find my resume and connect with me on [LinkedIn](https://www.linkedin.com/in/alexiscastel/).
+
 Education
 ======
 * Ph.D in Mechanics and Energetic, University of Burgundy, France, 2013
