@@ -5,10 +5,12 @@ permalink: /portfolio/train-counter
 collection: portfolio
 ---
 
-When living as close as 5 houses from the train track, train horn is part of your daily life. So much so that, after a while you don't notice it. During the pandemic in 2020, we suddenly noted how we didn't hear as many trains passing by. That's when I got the idea to make a system to count trains from my house. The first thing that came to mind was a visual system of sorts, however, I quickly found that it was easier to use a microphone and Bayesian classifiers to get there.
-The whole thing runs in Python. Selected audio signals get saves to pentially be added to the library of train sounds.
+Living just five houses away from a train track, the sound of train horns became so ingrained in daily life that it faded into the background. However, during the quieter days of the 2020 pandemic, I noticed a sudden reduction in the usual symphony of passing trains. This observation inspired me to build a system that could count the number of trains passing by without needing to actively listen for them.
 
-Future developments:
-- counting the train direction
-- evaluating the train speed using the doppler effect
-- Running a small web UI
+<img src='/images/train-500x300.jpg'>"
+
+Initially, I considered using a visual system to detect trains, but I soon realized that a sound-based approach would be more efficient. I developed a solution that uses a microphone, Python, and Bayesian classifiers to identify and count train sounds accurately. This setup identifies specific audio signals associated with train horns, recording them for potential future use in building a larger library of train sounds.
+Future Developments:
+- Train Direction Detection: Enhancing the system to determine the direction trains are traveling.
+- Speed Estimation: Using the Doppler effect to estimate the speed of each passing train.
+- Web Interface: Creating a small web UI to make real-time train data accessible remotely.
