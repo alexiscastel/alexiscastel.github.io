@@ -1,11 +1,13 @@
 ---
 title: "Lua script for ILS landin"
-excerpt: ""
+excerpt: "LuaILS is a custom Lua script designed to enhance the experience of flying RC aircraft"
 permalink: /portfolio/lua-ILS-landing
 collection: portfolio
 ---
 
 LuaILS is a custom Lua script designed to enhance the experience of flying RC aircraft by providing GPS telemetry data and feedback for safer, more precise landings. This project originated from personal challenges in aligning RC planes with runways and avoiding obstacles like trees during landing. To address these difficulties, LuaILS integrates GPS data into a telemetry screen and offers audio cues when the aircraft is correctly lined up with the runway.
+
+The repository is located [here](https://github.com/alexiscastel/LuaILS).
 
 ## Features
 
