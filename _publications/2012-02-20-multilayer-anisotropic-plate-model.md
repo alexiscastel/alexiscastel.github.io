@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2012-2-20-multilayer-anisotropic-plate-model
 date: 2012-2-20
 venue: 'Journal of sound and vibration'
-paperurl: 'Journal of sound and vibration'
+paperurl: /files/JSV_2012_Multilayer_Anisotropic_plate_model.pdf
 citation: 'Loredo, A. and Castel, A. (2012). &quot;A multilayer anisotropic plate model with warping functions for the study of vibrations reformulated from Woodcock&apos;s work.&quot; <i>Journal of sound and vibration</i>. 332(102–125).'
 ---
 
