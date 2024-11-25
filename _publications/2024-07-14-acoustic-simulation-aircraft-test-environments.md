@@ -6,7 +6,7 @@ permalink: /publication/2018-07-14-acoustic-simulation-aircraft-test-environment
 date: 2024-07-14
 venue: 'NOISE-CON24'
 #excerpt: ''
-#paperurl: /files/AA-DYNACOMP-2012-62.pdf
+paperurl: /files/NoiseCon_2024_Advanced_Acoustic_Simulation.pdf
 citation: 'Weston, A.R.; Castel, A.; Gardner, B.; Hadjit, R. and Deshpande, S. (2024). &quot;Advanced acoustic simulation of aircraft test environments: integration of the direct field acoustic testing methodology.&quot; <i>NOISE-CON24</i>.'
 ---
 
