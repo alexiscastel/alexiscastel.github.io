@@ -5,9 +5,6 @@ permalink: /portfolio/3d-printed-speakers
 collection: portfolio
 ---
 
-Here’s a polished version of your blurb for your website:
-
----
 
 
 I decided to 3D print a sleek pair of speakers from [Thingiverse.com](https://www.thingiverse.com/), choosing [this model](https://www.thingiverse.com/thing:4750820). My curiosity was piqued—were these designed purely for aesthetics, or did they incorporate thoughtful acoustic engineering? To find out, I built them:
