@@ -1,18 +1,36 @@
 ---
-title: "3D printed backloaded horn speakers and their simulation"
+title: "3D-Printed Speakers: Building, Testing, and Simulating"
 excerpt: "I decided to print a nice looking pair of speakers from Thingiverse.com. Following this I thought simulating the speakers with VA One would be appropriate.<br/><img src='/images/Open-Speaker-450x600.jpg'>"
 permalink: /portfolio/3d-printed-speakers
 collection: portfolio
 ---
 
-I decided to print a nice looking pair of speakers from [Thingiverse.com](https://www.thingiverse.com/), specifically [this model](https://www.thingiverse.com/thing:4750820). I was really curious of how this would perform and mainly if the designer focused only on looks or if there was some real acoustic engineering behind it. So I built it:
-<br>
-<img src='/images/Open-Speaker-450x600.jpg'>
-<br>
-<img src='/images/Speaker-Pair-600x450.jpg'>
-<br>
-Choosing first an experimental approach, I decided to measure (with AudioTool on my phone), the response of those speakers to a pink noise:
-<br>
-<img src='/images/AudioTool.jpg'>
-<br>
-I thought this was pretty good! Luck of the draw or proper engineering, the next step for me was simulating the speakers with VA One using a coupled Finite Element Model/Boundary Element model.
+Here’s a polished version of your blurb for your website:
+
+---
+
+
+I decided to 3D print a sleek pair of speakers from [Thingiverse.com](https://www.thingiverse.com/), choosing [this model](https://www.thingiverse.com/thing:4750820). My curiosity was piqued—were these designed purely for aesthetics, or did they incorporate thoughtful acoustic engineering? To find out, I built them:
+
+<div>
+<img src='/images/Open-Speaker-450x600.jpg' alt='Open Speaker Design'>
+<img src='/images/Speaker-Pair-600x450.jpg' alt='Speaker Pair'>
+</div>
+
+### Experimental Characterization
+
+To begin, I opted for an experimental approach and measured the speakers' frequency response using pink noise and the AudioTool app on my phone. Although these measurements were taken in my office (far from anechoic), they revealed some interesting insights:
+
+<div>
+<img src='/images/AudioTool.jpg' alt='AudioTool Measurement Screenshot'>
+</div>
+
+Despite the less-than-ideal conditions (including visible room modes), the small 4-inch drivers performed surprisingly well, with no significant roll-off until around 100 Hz. This was impressive! Whether due to careful engineering or sheer luck, it motivated me to delve deeper with a more analytical approach.
+
+### Simulation with VA One
+
+I simulated the speakers using VA One, employing a coupled Finite Element Model (FEM) and Boundary Element Model (BEM). The simulation covered a frequency range from 62.5 Hz to 500 Hz, solved in 1/12th octave bands.
+
+- **Finite Element Model Details:** The speaker was represented as a flat surface with a single rigid body mode. A fixed point provided mechanical impedance, based on the driver’s spec sheet to match the suspended mass and first resonant frequency.
+
+The simulation results highlighted the impact of the horn design, particularly at low frequencies. A notable effect was observed around 250 Hz, showing the horn’s contribution to performance.
