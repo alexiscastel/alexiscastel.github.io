@@ -33,4 +33,10 @@ I simulated the speakers using VA One, employing a coupled Finite Element Model 
 
 - **Finite Element Model Details:** The speaker was represented as a flat surface with a single rigid body mode. A fixed point provided mechanical impedance, based on the driver’s spec sheet to match the suspended mass and first resonant frequency.
 
-The simulation results highlighted the impact of the horn design, particularly at low frequencies. A notable effect was observed around 250 Hz, showing the horn’s contribution to performance.
+-  **Boundary Element Model Details:** All surfaces besides the speaker are modeled as rigid. The speaker is considered to be floating in an infinite space.
+
+The simulation results highlighted the impact of the horn design, particularly at low frequencies. A notable effect was observed around 125 Hz, showing the horn’s contribution to performance as most of the sound pressure is coming out of it.
+<img src='/images/Speaker_125Hz.png' alt='VA One contour plot response at 125 Hz.'>
+<img src='/images/Speaker_280Hz.png' alt='VA One contour plot response at 280 Hz.'>
+
+More thorough investigation and measurements may better quantify the speaker's performance. For now, I am now using these as my daily speakers for my workstation.
