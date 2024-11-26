@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2019-09-01-Pass-by-Noise-Predictions
 date: 2019-09-01
 venue: 'SAE International Journal of Advances and Current Practices in Mobility'
-paperurl: 'https://www.sae.org/publications/technical-papers/content/2019-26-0188/'
+paperurl: /files/SAE_2019_Pass-By_Noise_Prediction.pdf
 citation: 'Calloni, M. et al. (2012). &quot;A pass-by noise prediction method based on source-path-receiver approach combining simulation and test data.&quot; <i>SAE International Journal of Advances and Current Practices in Mobility</i>. Volume 1, pages 120-125.'
 ---
 
