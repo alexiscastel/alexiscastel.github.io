@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2018-DFAT-Diffusivity
 date: 2018-04-03
-venue: 'ECSSMET 2018'
+venue: 'ECSSMET'
 paperurl: /files/ECSSMET_2018_INVESTIGATING_DIFFUSIVITY_VIRTUAL_DFAT.pdf
 citation: Castel,A. et al., (2018). &quot;Investigating Diffusivity Of Virtual Diffuse Field Acoustic Test (DFAT) Using Boundary Element Modeling And Wavenumber-Frequency Analysis.&quot; <i>ECSSMET 2018</i>.'
 ---
