@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2023-05-16-Strain-Energy-Proportional-Damping-Modal-Frequency-Response-Models
 date: 2023-05-16
-venue: '33rd Aerospace Testing Seminar, May 2023'
+venue: '33rd Aerospace Testing Seminar'
 paperurl: '/files/ATS_2023_Strain_Energy_Modal_Damping.pdf'
 citation: 'Castel, A., Gardner, B.K., Calloni, M. (2023). &quot;Strain Energy Proportional Damping For Modal Frequency Response Models"/i>.'
 ---
