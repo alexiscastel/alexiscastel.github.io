@@ -13,89 +13,86 @@ You can find my resume and connect with me on [LinkedIn](https://www.linkedin.co
 
 Education
 ======
-* Ph.D in Mechanics and Energetic, University of Burgundy, France, 2013
+* Ph.D. in Mechanical Engineering, University of Burgundy, France, 2013
 * Master of Business Administration, University of Burgundy, France, 2013
-* Master of Science (Material sciences, Acoustic, Vibration, Numerical methods), University of Burgundy, France, 2010
-* Master of Engineering, University of Burgundy, France, 2010
+* Master of Science in Material Sciences, Acoustics, Vibration, and Numerical Methods, University of Burgundy, France, 2010
+* Master of Engineering in Mechanics, University of Burgundy, France, 2010
 
 Work experience
 ======
-* 2022-present: Technical Expert Aerospace Vibro-Acoustics - <i>ESI North America | Farmington Hills, MI, USA</i>
-  * Provides technical expertise for vibro-acoustic simulations for aerospace applications. Activities focused on customer specific projects, presales studies and training development.
-  * Takes part in engineering software development planning sessions ensuring customer feedback is accounted for. Participates in developing feature acceptance criteria.
-  * Management and technical coaching of a team of three application engineers.
-  * Methodology development:
-  * Simulation resource and time requirement prediction based on large data sets of previous models solve log using Bayesian regressions.
-    * Development of a Bayesian optimization for rapid probabilistic estimations of overall level on frequency response coupled finite element-boundary element models.
-    * Shock simulation using the virtual mode synthesis and the finite element method (implicit and explicit transient formulations).
-    * Damping projection models using the modal strain energy.
-  * Feature prototyping using the Python environment as part of the methodology development, allowing for early acceptance from the customer before feature development
+* 2022-present: Technical Expert Aerospace Vibro-Acoustics - <i>Keysight Technologies | Cleveland, OH, USA</i>
+  * Provides technical expertise in structural dynamics and acoustic simulation workflows for aerospace applications, with activities spanning customer projects, presales studies, training, and methodology development.
+  * Contributes to software development planning by bringing customer feedback into feature discussions and acceptance criteria.
+  * Mentors and provides technical coaching to a team of three application engineers.
+  * Develops advanced methodologies including simulation resource forecasting from historical solver data using Bayesian regression, Bayesian optimization for coupled finite element-boundary element models, shock simulation workflows, and damping projection models based on modal strain energy.
+  * Prototypes new analysis features in Python to accelerate methodology development and secure early customer feedback.
 
 * 2021-2022: Technical Fellow - <i>ZIN Technologies | Middleburg Heights, OH, USA</i><br>
-  2018 - 2021: Lead Vibro-Acoustics Engineer
-  * NASA SLS Universal Stage Adapter (USA) acoustic simulation lead for Payload Environmental Control. Creates simulation models using VA One and FEMAP NASTRAN for acoustic prediction for launch vehicle lift off and transonic environment simulation.
-  * Applied NASA’s processes from handbooks and standards for:
-    * Simulation model processes
-    * Model verification and validation
-    * Uncertainties evaluation
-    * Requirement verification
-  * Development of innovative acoustic treatment solutions:
-    * Ultra low frequency linear Helmholtz resonators for launch vehicles
-    * Mid and high frequency foam absorbers
-  * Took active part in the development of large scale test verification for the simulation models using Direct Field Acoustic Testing (DFAT)
-    * Past test experience on a pathfinder article in high power reverberation room (NASA RATF)
-  * Developed dedicated ultra low frequency high intensity test apparatus (impedance tube)
-  * Technical supervision of a team of two engineers:
-    * Led the team through the development of an aeroacoustic vent simulation using OpenFOAM.
+  2018-2021: Lead Vibro-Acoustics Engineer
+  * Led acoustic simulation activities for NASA's Space Launch System Universal Stage Adapter payload environment work, using VA One and FEMAP NASTRAN to predict liftoff and transonic acoustic environments.
+  * Applied NASA processes and standards for model development, verification and validation, uncertainty evaluation, and requirement verification.
+  * Developed innovative acoustic treatment concepts, including ultra-low-frequency Helmholtz resonators and mid- to high-frequency foam absorbers.
+  * Supported large-scale Direct Field Acoustic Testing (DFAT) verification efforts and prior high-power reverberation room testing at NASA RATF.
+  * Developed a dedicated ultra-low-frequency high-intensity impedance tube.
+  * Supervised a team of two engineers, including work on an aeroacoustic vent simulation using OpenFOAM.
 
-* 2017-2018: Senior Application Engineer - <i>ESI North America | Farmington Hills, MI, USA</i><br>
-  2014-2017: Application Engineer	
-  * Plan, budget and execute vibro-acoustics engineering services projects using VA One solutions for the full frequency spectrum. Projects involve a wide range of customers from off-highway to aerospace industries.
-  * Developed new simulation processes in coordination with the research and development team to meet customers needs, e.g. Direct Field Acoustic Testing (DFAT) simulation, reduced hybrid model for launch   vehicles and automotive pass-by noise simulation. Publish and present innovative simulation methods in technical conferences organized by societies of experts.
-  * Provided remote and on site customer support for ESI Group vibro-acoustics software solutions to North American customers. This includes providing assistance for software usage and academic background.
-  * Prepared and present customer specific presales projects in order to demonstrate software capability to meet customer needs for a given problem.
-  * Transferred theoretical and practical knowledge to customers through software training.
-  * Wrote multiple scripts and programs interfacing with the VA One software for both internal and customer use.
-  * Wrote and presented conference papers and webinars on innovative vibro-acoustics topics.
-  * Assigned to aerospace customers since 2016.
- 
-* 2013-2014: Test Engineer	- <i>Welience: Automotive and Transportation Department | Magny-Cours, France</i>
-  * Acted as Test Engineer – responsible for mechanical engineering aspects such as prep, measurement, and analysis of vibrations and noise levels on car parts for various projects involving hydraulic systems. 
-  * Led design operations of various mechanical test methods and benches for vibration, mechanical resistance, thermal resistance and fluid abrasion resistance studies. 
-  * Managed daily customer relations to provide exceptional service, such as developing post-test reports to communicate results. 
+* 2018-2021: VA Technical Consultant (part-time) - <i>ESI Group</i>
+  * Contributed to DFAT simulation prototype development, correlation studies, and high-performance computing simulation support.
 
-  
+* 2017-2018: Senior Vibro-Acoustics Application Engineer - <i>ESI North America | Farmington Hills, MI, USA</i><br>
+  2014-2017: Vibro-Acoustics Application Engineer
+  * Planned, budgeted, and executed vibration and acoustic engineering services projects using VA One across the full frequency spectrum, serving customers from off-highway to aerospace industries.
+  * Developed new simulation processes in coordination with research and development teams, including DFAT simulation, reduced hybrid models for launch vehicles, and pass-by noise workflows.
+  * Provided remote and on-site support for vibro-acoustic software users in North America, including both software guidance and technical background.
+  * Prepared and presented customer-specific presales studies and delivered software training.
+  * Wrote scripts and programs interfacing with VA One for internal and customer use.
+  * Published and presented conference papers and webinars on vibro-acoustics topics.
+
+* 2013-2014: Test Engineer - <i>Welience: Automotive and Transportation Department | Magny-Cours, France</i>
+  * Managed vibration and acoustic test activities for hydraulic system components, including preparation, measurement, and analysis.
+  * Designed and supported test benches and methods for vibration, thermal resistance, mechanical resistance, and fluid abrasion studies.
+  * Prepared customer-facing test reports and supported day-to-day technical interactions.
+
+* 2010-2013: Research Assistant - <i>DRIVE Research Laboratory | Nevers, France</i>
+  * Published scientific articles in the fields of vibration, damping, and composite structures.
+  * Developed numerical models for damped multilayer plates and energy-based analysis of dynamic systems.
+
+* 2010-2013: Vibration Lab Instructor - <i>Institut Supérieur de l'Automobile et des Transports, University of Burgundy | Nevers, France</i>
+  * Taught and graded vibration laboratory sessions for engineering students and modernized existing lab procedures.
+
+* 2008: Application Engineer Intern - <i>National Instruments | Nanterre, France</i>
+  * Developed demonstration systems using NI-PXI, CompactRIO, and NI-DAQ platforms and gained hands-on experience with LabVIEW, LabVIEW RT, and LabVIEW FPGA.
+
 Skills
 ======
-* Vibro - acoustics simulation 
+* Aerospace vibro-acoustics and structural dynamics
+* Numerical simulation
   * Finite Element Method
   * Boundary Element Method
   * Statistical Energy Analysis
-  * Hybrid FE-SEA Method
+  * Hybrid FE-SEA methods
   * Shock simulation
-* Experimental skills
+  * Damping modeling
+* Experimental methods
   * Data acquisition
-  * Signal Processing
-  * Transfer Path Analysis
-  * Testing experience in high power reverberation room
-* Structural Dynamics 
-* Numerical Methods
-* High Performance Computing
-* Mechanical Modeling Research
-* Scientific redaction
-* Project management
-* Procedure/Operations Development
-* Report Development
-* Languages: English & French
-* ME Software: VA One, NOVA, FOAM-X, NX NASTRAN, VPS, CATIA V5, Solidworks
-* Computer Languages: Python, Matlab, Labview, Visual Basic
-* 
+  * Signal processing
+  * Transfer path analysis
+  * Direct Field Acoustic Testing (DFAT)
+  * High-power reverberation room testing
+* High-performance computing
+* Mechanical modeling research
+* Project and methodology development
+* Technical training and communication
+* Languages: English, French
+* Engineering software: VA One, NX NASTRAN/FEMAP, OpenFOAM, VPS, CATIA V5, SolidWorks, NOVA, FOAM-X
+* Programming: Python, MATLAB, LabVIEW, Visual Basic
+
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Service and leadership
 ======
-* Founding member and President of <i>La Petite Ecole Française de Cleveland</i>, a non-profit dedicated to teaching French to the children of French speaking families in the region of Cleveland.
+* Founding member and President of <i>La Petite École Française de Cleveland</i>, a non-profit organization dedicated to teaching French to children of French-speaking families in the Cleveland area.
