@@ -6,7 +6,7 @@ permalink: /publication/2018-DFAT-Diffusivity
 date: 2018-04-03
 venue: 'ECSSMET'
 paperurl: /files/ECSSMET_2018_INVESTIGATING_DIFFUSIVITY_VIRTUAL_DFAT.pdf
-citation: Castel,A. et al., (2018). &quot;Investigating Diffusivity Of Virtual Diffuse Field Acoustic Test (DFAT) Using Boundary Element Modeling And Wavenumber-Frequency Analysis.&quot; <i>ECSSMET 2018</i>.'
+citation: 'Castel, A. et al. (2018). &quot;Investigating Diffusivity Of Virtual Diffuse Field Acoustic Test (DFAT) Using Boundary Element Modeling And Wavenumber-Frequency Analysis.&quot; <i>ECSSMET 2018</i>.'
 ---
 In an ongoing effort to complement or replace expensive, time-consuming, and potentially damaging (due to transportation) acoustic qualification testing of aerospace systems in reverberant chambers, Direct Field Acoustic Testing® (DFAT®) has been examined more closely in recent years.
 

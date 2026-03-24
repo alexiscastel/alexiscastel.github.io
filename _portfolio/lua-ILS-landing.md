@@ -1,5 +1,5 @@
 ---
-title: "Lua script for ILS landin"
+title: "Lua script for ILS landing"
 excerpt: "LuaILS is a custom Lua script designed to enhance the experience of flying RC aircraft"
 permalink: /portfolio/lua-ILS-landing
 collection: portfolio
@@ -11,10 +11,10 @@ The repository is located [here](https://github.com/alexiscastel/LuaILS).
 
 ## Features
 
-    Telemetry Display: A clear visual representation of the aircraft's position relative to the landing strip.
-    Audio Feedback: Real-time audio notifications to confirm proper alignment with the runway.
-    Compatibility: Designed for use with GPS-enabled RC aircraft, such as the Turbo Timber Evolution.
+- Telemetry Display: A clear visual representation of the aircraft's position relative to the landing strip.
+- Audio Feedback: Real-time audio notifications to confirm proper alignment with the runway.
+- Compatibility: Designed for use with GPS-enabled RC aircraft, such as the Turbo Timber Evolution.
 
 ## Current Limitations
 
-    The GPS coordinates of the landing strip are currently hardcoded, which makes it less flexible for use in varying locations.
+- The GPS coordinates of the landing strip are currently hardcoded, which makes it less flexible for use in varying locations.

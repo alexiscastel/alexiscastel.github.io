@@ -6,7 +6,7 @@ permalink: /publication/2013-11-21-Comportement-vibratoire-de-structures-composi
 date: 2013-11-21
 # venue: 'Dynacomp'
 #excerpt: ''
-paperurl: files/Castel_Comportement_Vibratoire_Structures_Composite.pdf
+paperurl: /files/Castel_Comportement_Vibratoire_Structures_Composite.pdf
 citation: 'Castel, A. (2013). &quot;Comportement vibratoire de structures composites intégrant des éléments amortissants.&quot; <i>Université de Bourgogne, Ecole Doctorale SPIM</i>.'
 ---
 
