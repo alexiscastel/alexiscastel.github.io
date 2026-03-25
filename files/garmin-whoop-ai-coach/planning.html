@@ -1,0 +1,1404 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Castel | 2026 Trail Racing Macro-Cycle Training Plan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            border-bottom: 3px solid #ff6b35;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        header .subheader {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-top: 0.5rem;
+        }
+
+        header .meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+
+        header .meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        header .meta strong {
+            color: #ff6b35;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Section headers */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid #ff6b35;
+        }
+
+        .subsection-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            background: #f1f5f9;
+            border-left: 4px solid #ff6b35;
+            border-radius: 4px;
+        }
+
+        /* Season plan overview */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .overview-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #ff6b35;
+        }
+
+        .overview-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ff6b35;
+            margin-bottom: 0.75rem;
+        }
+
+        .overview-card p {
+            font-size: 0.95rem;
+            color: #475569;
+            margin-bottom: 0.5rem;
+        }
+
+        .overview-card ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .overview-card li {
+            font-size: 0.9rem;
+            color: #475569;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .overview-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #ff6b35;
+            font-weight: bold;
+        }
+
+        /* Phase table */
+        .phase-table {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .phase-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .phase-table th {
+            background: #0f172a;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ff6b35;
+        }
+
+        .phase-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .phase-table tr:hover {
+            background: #f8fafc;
+        }
+
+        .phase-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Weekly plan */
+        .weekly-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .week-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #ff6b35;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .week-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .week-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 1rem;
+            border-bottom: 2px solid #ff6b35;
+        }
+
+        .week-header h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .week-header p {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+        }
+
+        .week-theme {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ff6b35;
+            margin-top: 0.5rem;
+        }
+
+        .week-content {
+            padding: 1.5rem;
+        }
+
+        .day-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .day-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .day-date {
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .day-focus {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .workout-block {
+            background: #f8fafc;
+            border-left: 3px solid #ff6b35;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .workout-label {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.25rem;
+        }
+
+        .workout-description {
+            color: #475569;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .purpose-box {
+            background: #eff6ff;
+            border-left: 2px solid #3b82f6;
+            padding: 0.5rem 0.75rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #1e40af;
+            border-radius: 3px;
+        }
+
+        .adaptation-box {
+            background: #fef3c7;
+            border-left: 2px solid #f59e0b;
+            padding: 0.5rem 0.75rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #92400e;
+            border-radius: 3px;
+        }
+
+        .notes-box {
+            background: #e0e7ff;
+            border-left: 2px solid #6366f1;
+            padding: 0.5rem 0.75rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #3730a3;
+            border-radius: 3px;
+        }
+
+        /* Checkbox styling */
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            margin-top: 0.35rem;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #ff6b35;
+            flex-shrink: 0;
+        }
+
+        .checkbox-item label {
+            cursor: pointer;
+            flex-grow: 1;
+            font-size: 0.9rem;
+            color: #1e293b;
+            user-select: none;
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + label {
+            color: #94a3b8;
+            text-decoration: line-through;
+        }
+
+        /* Targets box */
+        .targets-box {
+            background: #ecfdf5;
+            border: 1px solid #86efac;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .targets-box h4 {
+            color: #166534;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .targets-box ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .targets-box li {
+            color: #166534;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .targets-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        /* Constraints box */
+        .constraints-box {
+            background: #fef2f2;
+            border: 1px solid #fca5a5;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .constraints-box h4 {
+            color: #7f1d1d;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .constraints-box ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .constraints-box li {
+            color: #7f1d1d;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .constraints-box li:before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            color: #dc2626;
+        }
+
+        /* Success factors */
+        .success-factors {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #10b981;
+        }
+
+        .success-factors h3 {
+            color: #10b981;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .success-factors ol {
+            list-style-position: inside;
+            margin-left: 0;
+        }
+
+        .success-factors li {
+            color: #475569;
+            margin-bottom: 0.75rem;
+            padding-left: 0.5rem;
+        }
+
+        /* Handoff notes */
+        .handoff-notes {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3b82f6;
+        }
+
+        .handoff-notes h3 {
+            color: #3b82f6;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .handoff-notes ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .handoff-notes li {
+            color: #475569;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .handoff-notes li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header .meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .weekly-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .phase-table {
+                font-size: 0.8rem;
+            }
+
+            .phase-table th,
+            .phase-table td {
+                padding: 0.5rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            header {
+                page-break-after: avoid;
+            }
+
+            .week-card {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Utility classes */
+        .text-small {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .text-muted {
+            color: #94a3b8;
+        }
+
+        .badge-priority {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .badge-a {
+            background: #fecaca;
+            color: #7f1d1d;
+        }
+
+        .badge-b {
+            background: #bfdbfe;
+            color: #1e40af;
+        }
+
+        .badge-c {
+            background: #d1d5db;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Alexis Castel | 2026 Trail Racing Macro-Cycle</h1>
+        <p class="subheader">Season Plan Window: March 25 – November 21, 2026 (35 weeks)</p>
+        <div class="meta">
+            <span><strong>Athlete Focus:</strong> Adventure Race Readiness + Half-Marathon Speed</span>
+            <span><strong>Plan Type:</strong> Phase-Based Periodization</span>
+            <span><strong>Status:</strong> Active Training Phase 1</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Season Overview Section -->
+        <div class="section-title">Season Plan Overview</div>
+
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>Primary Goals</h3>
+                <ul>
+                    <li>Build sustained Z2 aerobic capacity for 7–8 hour adventure races</li>
+                    <li>Develop half-marathon speed and threshold capacity (target 01:42:00)</li>
+                    <li>Fully resolve calf strain; restore eccentric loading tolerance</li>
+                    <li>Maintain load-fitness coupling (ACWR 1.1–1.3); prevent overreach</li>
+                </ul>
+            </div>
+
+            <div class="overview-card">
+                <h3>Key Metrics Targets</h3>
+                <ul>
+                    <li><strong>Chronic EWMA:</strong> Oscillate 65–80 (safe ceiling 75–80)</li>
+                    <li><strong>Ramp Rate:</strong> &lt;+8–10 units/week (disciplined progression)</li>
+                    <li><strong>ACWR:</strong> Stabilize 1.1–1.3 (recover fitness coupling)</li>
+                    <li><strong>Recovery Days:</strong> 1 zero-load day per 7–8 training days</li>
+                </ul>
+            </div>
+
+            <div class="overview-card">
+                <h3>Priority Races</h3>
+                <ul>
+                    <li>Leave No Trace Half Marathon (Sep 5) <span class="badge-priority badge-a">A</span></li>
+                    <li>Michigan Adventure Race (May 30) <span class="badge-priority badge-b">B</span></li>
+                    <li>Chippewa Creek Challenge HM (Oct 24) <span class="badge-priority badge-b">B</span></li>
+                    <li>Dirty Dirt 15K Trail Race (Nov 21) <span class="badge-priority badge-b">B</span></li>
+                </ul>
+            </div>
+
+            <div class="overview-card">
+                <h3>Phase Structure (6 Phases)</h3>
+                <ul>
+                    <li><strong>Phase 1:</strong> Recovery & Rebalance (Wks 1–4)</li>
+                    <li><strong>Phase 2:</strong> Adventure Race Build (Wks 5–12)</li>
+                    <li><strong>Phase 3:</strong> Adventure Race Peak & Bridge (Wks 13–18)</li>
+                    <li><strong>Phase 4:</strong> Half-Marathon Speed Build (Wks 19–26)</li>
+                    <li><strong>Phase 5:</strong> Adventure Race Bridge & Fall HM (Wks 27–32)</li>
+                    <li><strong>Phase 6:</strong> Fall 15K Build & Wrap (Wks 33–35)</li>
+                </ul>
+            </div>
+
+            <div class="overview-card">
+                <h3>Calf Strain Protocol</h3>
+                <ul>
+                    <li>Pain-free confirmation required before threshold/long-run progression</li>
+                    <li>Eccentric loading introduced gradually (Week 2–3 onward)</li>
+                    <li>Hill repeats and downhill work deferred until pain fully resolved</li>
+                    <li>Buffer threshold sessions with 2–3 recovery days before long efforts</li>
+                </ul>
+            </div>
+
+            <div class="overview-card">
+                <h3>Cycling Integration</h3>
+                <ul>
+                    <li>Target 2–3 Z2 sessions per week (60–120 min)</li>
+                    <li>Shift architecture from 90% run → 60–70% run, 30–40% cycling</li>
+                    <li>Aerobic base builder; reduces running monotony and calf load</li>
+                    <li>MUST be tracked in TL system for accurate ACWR calculations</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Phase Summary Table -->
+        <div class="section-title">Phase Summary Table</div>
+
+        <div class="phase-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Weeks</th>
+                        <th>Chronic EWMA Target</th>
+                        <th>Key Theme</th>
+                        <th>Primary Races</th>
+                        <th>Recovery Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1: Recovery & Rebalance</strong></td>
+                        <td>1–4 (4 wks)</td>
+                        <td>65–70</td>
+                        <td>Calf healing; cycling base; load discipline</td>
+                        <td>Flirt w/ Dirt (C), Dirty Dash (B)</td>
+                        <td>1 ZLD/7–8 days; ramp &lt;+8 units/wk</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2: Adventure Race Build</strong></td>
+                        <td>5–12 (8 wks)</td>
+                        <td>75–80</td>
+                        <td>Sustained Z2 endurance; technical terrain; cycling</td>
+                        <td>Muddy Paws (C)</td>
+                        <td>1 ZLD/7–8 days; 2 recovery weeks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3: Adventure Race Peak & Bridge</strong></td>
+                        <td>13–18 (6 wks)</td>
+                        <td>65–75</td>
+                        <td>Post-8hr race recovery; VO₂ restoration</td>
+                        <td><em>None (recovery)</em></td>
+                        <td>Week 13 full recovery; ease-back focus</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4: Half-Marathon Speed Build</strong></td>
+                        <td>19–26 (8 wks)</td>
+                        <td>75–80</td>
+                        <td>Threshold/tempo capacity; HM pacing</td>
+                        <td>Down & Dirty (B), Leave No Trace (A)</td>
+                        <td>1 ZLD/7–8 days; recovery week (wk 22)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5: Adventure Race Bridge & Fall HM</strong></td>
+                        <td>27–32 (6 wks)</td>
+                        <td>65–75</td>
+                        <td>Dual-race management (Sep 5 + Sep 26); fall HM prep</td>
+                        <td>Big M Adventure (B), Chippewa Creek (B)</td>
+                        <td>Week 27 recovery; wks 31–32 taper</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6: Fall 15K Build & Wrap</strong></td>
+                        <td>33–35 (3 wks)</td>
+                        <td>65–75</td>
+                        <td>15K threshold; season conclusion</td>
+                        <td>Dirty Dirt 15K (B)</td>
+                        <td>Week 35 taper; sleep 8.5+ hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 4-Week Plan Section -->
+        <div class="section-title">Phase 1: Recovery & Rebalance — 4-Week Training Plan</div>
+        <p style="color: white; margin-bottom: 1.5rem; font-size: 0.95rem;">
+            <strong>Plan Dates:</strong> March 23 – April 20, 2026 | <strong>Chronic EWMA Target:</strong> 65–70 range | <strong>Focus:</strong> Calf strain resolution, cycling base integration, load discipline
+        </p>
+
+        <!-- Week 1 -->
+        <div class="weekly-grid">
+            <div class="week-card">
+                <div class="week-header">
+                    <h3>Week 1: Mar 23–29</h3>
+                    <p>Recovery Baseline + Race Week Taper</p>
+                    <div class="week-theme">Manage pre-race taper (Mar 28); confirm calf pain-free; enforce recovery discipline</div>
+                </div>
+                <div class="week-content">
+                    <!-- Monday -->
+                    <div class="day-item">
+                        <div class="day-date">Mon, Mar 23</div>
+                        <span class="day-focus">Recovery</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Easy Run (30 min) + Mobility</div>
+                            <div class="workout-description">Hip strength, heel touch, pistol squats. Restore parasympathetic tone post-injury.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-mon-run" name="w1-mon-run" value="done">
+                                <label for="w1-mon-run">Complete Z1 easy run</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-mon-mob" name="w1-mon-mob" value="done">
+                                <label for="w1-mon-mob">Mobility routine + stretch</label>
+                            </div>
+                            <div class="notes-box">TL target ~45. Sleep target 8.5h tonight. Sauna encouraged post-mobility.</div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="day-item">
+                        <div class="day-date">Tue, Mar 24</div>
+                        <span class="day-focus">Strength + Base</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Whole-Body, 45 min) + Z1 Easy Run (25 min)</div>
+                            <div class="workout-description">Anchor strength routine early morning. Low-intensity run post-strength. Monitor calf response.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-tue-str" name="w1-tue-str" value="done">
+                                <label for="w1-tue-str">Complete strength session</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-tue-run" name="w1-tue-run" value="done">
+                                <label for="w1-tue-run">Z1 easy run (25 min, flat)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>Adaptation:</strong> If calf pinches during run: walk only or skip.</div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div class="day-item">
+                        <div class="day-date">Wed, Mar 25</div>
+                        <span class="day-focus">Endurance Base</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z2 Bike (60 min)</div>
+                            <div class="workout-description">Steady aerobic focus. Zero calf impact. Build cycling confidence.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-wed-bike" name="w1-wed-bike" value="done">
+                                <label for="w1-wed-bike">Complete Z2 bike session (60 min)</label>
+                            </div>
+                            <div class="notes-box">TL target ~55. Mirrors Mar 21 success (60 min Z3 bike). Stay Z2 today (easier recovery).</div>
+                        </div>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div class="day-item">
+                        <div class="day-date">Thu, Mar 26</div>
+                        <span class="day-focus">Strength + Mobility</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Leg Focus, 45 min) + Eccentric Calf Protocol</div>
+                            <div class="workout-description">Single-leg step-downs 3×8, downhill walk 5 min, heel-drop holds 3×15 sec/leg. Introduce eccentric loading gradually.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-thu-str" name="w1-thu-str" value="done">
+                                <label for="w1-thu-str">Complete leg strength</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-thu-ecc" name="w1-thu-ecc" value="done">
+                                <label for="w1-thu-ecc">Eccentric calf protocol</label>
+                            </div>
+                            <div class="adaptation-box"><strong>CRITICAL:</strong> If calf strain reactivates (pain &gt;3/10): skip eccentric drills, mobility only.</div>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="day-item">
+                        <div class="day-date">Fri, Mar 27</div>
+                        <span class="day-focus">Recovery / Pre-Race Taper</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Recovery Run (20 min) OR Walk + Stretching</div>
+                            <div class="workout-description">Final taper day before 10k race. Confirm calf mobility. Reduce acute load.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-fri-easy" name="w1-fri-easy" value="done">
+                                <label for="w1-fri-easy">Z1 recovery run or walk (20–30 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-fri-stretch" name="w1-fri-stretch" value="done">
+                                <label for="w1-fri-stretch">Deep stretching routine</label>
+                            </div>
+                            <div class="notes-box"><strong>ZERO-LOAD DAY:</strong> TL &lt;20. Sleep 8.5+h, hydrate, carbs.</div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday - Race -->
+                    <div class="day-item">
+                        <div class="day-date">Sat, Mar 28</div>
+                        <span class="day-focus">RACE DAY</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Flirt with Dirt 10k <span class="badge-priority badge-c">C Priority</span></div>
+                            <div class="workout-description">Trail race, fitness test only. Effort: Z2–Z3 threshold, controlled pacing. Target ~51:45 (8:20/mi). Pre-race: 15 min warm-up + strides. Post-race: 10 min easy jog recovery.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-sat-race" name="w1-sat-race" value="done">
+                                <label for="w1-sat-race">Complete 10k race (no all-out effort)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-sat-recovery" name="w1-sat-recovery" value="done">
+                                <label for="w1-sat-recovery">Post-race recovery jog + stretch</label>
+                            </div>
+                            <div class="purpose-box"><strong>Purpose:</strong> Assess post-injury fitness; establish aerobic baseline. This is a C-priority race (fitness test)—do NOT chase time.</div>
+                            <div class="adaptation-box"><strong>If calf pain emerges:</strong> Dial back to Z2 and focus on finishing safely.</div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday -->
+                    <div class="day-item">
+                        <div class="day-date">Sun, Mar 29</div>
+                        <span class="day-focus">Post-Race Recovery + Travel</span>
+                        <div class="workout-block">
+                            <div class="workout-label">24–48 hr Easy Recovery: Walk (20 min) OR Yoga/Mobility Only</div>
+                            <div class="workout-description">No running. Light stretching (lower-body focus). Depart for Germany afternoon.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-sun-walk" name="w1-sun-walk" value="done">
+                                <label for="w1-sun-walk">Walk 20 min or mobility routine</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w1-sun-stretch" name="w1-sun-stretch" value="done">
+                                <label for="w1-sun-stretch">Full body stretching + calf focus</label>
+                            </div>
+                            <div class="notes-box"><strong>ZERO-LOAD DAY.</strong> Expect Acute EWMA ~75–80 post-race (spike from race). Chronic should stay ~72–73. TSB will dip −5 to −8 (normal).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 2 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <h3>Week 2: Mar 30 – Apr 5</h3>
+                    <p>Travel Maintenance + Post-Race Recovery</p>
+                    <div class="week-theme">Manage travel to Germany; maintain mobility; light base; reassess calf post-race</div>
+                </div>
+                <div class="week-content">
+                    <!-- Monday -->
+                    <div class="day-item">
+                        <div class="day-date">Mon, Mar 30</div>
+                        <span class="day-focus">Travel Day + Recovery</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Walk (20 min) + Mobility Routine</div>
+                            <div class="workout-description">Short walk in Germany. Hip strength, heel touch, pistol squats. Assess post-race calf soreness.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-mon-walk" name="w2-mon-walk" value="done">
+                                <label for="w2-mon-walk">Short walk (20 min) + mobility</label>
+                            </div>
+                            <div class="notes-box">TL &lt;20. Busy work schedule. Sleep 8.5+h. Hydrate well.</div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="day-item">
+                        <div class="day-date">Tue, Mar 31</div>
+                        <span class="day-focus">Strength OR Mobility</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (If Gym Available, 30 min, Light) OR Mobility + Walk</div>
+                            <div class="workout-description">Modified/light focus. Maintain strength consistency. Assess calf tolerance.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-tue-str" name="w2-tue-str" value="done">
+                                <label for="w2-tue-str">Strength or mobility routine (Germany logistics flexible)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If no gym:</strong> Full recovery day (mobility + walk only).</div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div class="day-item">
+                        <div class="day-date">Wed, Apr 1</div>
+                        <span class="day-focus">Recovery / Mobility</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Walk (25 min) + Deep Stretching (20 min)</div>
+                            <div class="workout-description">Jet lag/travel fatigue mitigation. Calf recovery focus. Flat terrain only.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-wed-walk" name="w2-wed-walk" value="done">
+                                <label for="w2-wed-walk">Easy walk + lower-body stretch</label>
+                            </div>
+                            <div class="notes-box"><strong>ZERO-LOAD DAY.</strong> TL &lt;15. Prepare for return flight Apr 2.</div>
+                        </div>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div class="day-item">
+                        <div class="day-date">Thu, Apr 2</div>
+                        <span class="day-focus">Travel Day</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Travel Recovery</div>
+                            <div class="workout-description">Return to Cleveland. Light activity only: walk 15 min if energy permits, or rest.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-thu-travel" name="w2-thu-travel" value="done">
+                                <label for="w2-thu-travel">Travel + light walk if possible</label>
+                            </div>
+                            <div class="notes-box">TL &lt;10. No running/strength. Hydrate, meal, sleep priority.</div>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="day-item">
+                        <div class="day-date">Fri, Apr 3</div>
+                        <span class="day-focus">Base Re-Entry</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Easy Run (25 min) + Mobility</div>
+                            <div class="workout-description">Return home. Confirm calf pain-free post-race/travel. Re-establish running confidence.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-fri-run" name="w2-fri-run" value="done">
+                                <label for="w2-fri-run">Z1 easy run (25 min, flat)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-fri-mob" name="w2-fri-mob" value="done">
+                                <label for="w2-fri-mob">Mobility + stretching</label>
+                            </div>
+                            <div class="purpose-box"><strong>CRITICAL ASSESSMENT:</strong> Pain-free = clearance to build Week 3–4. Pain present = extend recovery weeks.</div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday -->
+                    <div class="day-item">
+                        <div class="day-date">Sat, Apr 4</div>
+                        <span class="day-focus">Strength + Cycling</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Upper-Body, 45 min) + Z2 Bike (60 min)</div>
+                            <div class="workout-description">Upper-body focus morning. Maintain cycling base. Zero calf impact.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-sat-str" name="w2-sat-str" value="done">
+                                <label for="w2-sat-str">Upper-body strength (45 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-sat-bike" name="w2-sat-bike" value="done">
+                                <label for="w2-sat-bike">Z2 bike (60 min, steady)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If travel fatigue:</strong> Reduce bike to 45 min or skip strength.</div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday -->
+                    <div class="day-item">
+                        <div class="day-date">Sun, Apr 5</div>
+                        <span class="day-focus">Long-Run Attempt (Conditional)</span>
+                        <div class="workout-block">
+                            <div class="workout-label">OPTION A: Z2 Easy Long-Run (9–10 mi) | OPTION B: Z1 Run (6–7 mi) OR Walk + Bike Combo</div>
+                            <div class="workout-description"><strong>Option A (if calf fully pain-free Apr 3–5):</strong> Flat or minimal elevation, pace 8:45–9:15/mi, 75–85 min.</div>
+                            <div class="workout-description"><strong>Option B (if calf soreness persists):</strong> Z1 easy run 6–7 mi OR walk 20 min + Z2 bike 40 min.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-sun-longrun" name="w2-sun-longrun" value="done">
+                                <label for="w2-sun-longrun">Complete long-run attempt (Option A or B)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w2-sun-stretch" name="w2-sun-stretch" value="done">
+                                <label for="w2-sun-stretch">Post-run stretching (especially calf)</label>
+                            </div>
+                            <div class="purpose-box"><strong>CRITICAL:</strong> Pain-free 9–10 mi = green light Week 3–4 build. Pain present = extend calf protocol.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 3 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <h3>Week 3: Apr 6–12</h3>
+                    <p>Load Reintroduction + Threshold Building</p>
+                    <div class="week-theme">Begin modest Chronic EWMA build (72–75); threshold session; long-run progression; monitor calf</div>
+                </div>
+                <div class="week-content">
+                    <!-- Monday -->
+                    <div class="day-item">
+                        <div class="day-date">Mon, Apr 6</div>
+                        <span class="day-focus">Recovery Base</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Easy Run (30 min) + Mobility</div>
+                            <div class="workout-description">Establish Week 3 baseline. Assess post-long-run calf status.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-mon-run" name="w3-mon-run" value="done">
+                                <label for="w3-mon-run">Z1 easy run (30 min, flat)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-mon-mob" name="w3-mon-mob" value="done">
+                                <label for="w3-mon-mob">Mobility routine</label>
+                            </div>
+                            <div class="purpose-box"><strong>DECISION POINT:</strong> If calf pain-free on Apr 5, Week 3 proceeds. If calf limited, extend Week 2.</div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="day-item">
+                        <div class="day-date">Tue, Apr 7</div>
+                        <span class="day-focus">Strength + Speed Reintroduction</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Whole-Body, 45 min) + Z2 Easy Run (30 min) with 4×30 sec Strides</div>
+                            <div class="workout-description">Anchor strength early. Strides (Z4 effort, 2 min easy walk recovery). Reintroduce neuromuscular stimulus.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-tue-str" name="w3-tue-str" value="done">
+                                <label for="w3-tue-str">Whole-body strength (45 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-tue-run" name="w3-tue-run" value="done">
+                                <label for="w3-tue-run">Z2 easy run (30 min) + 4×30 sec strides</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If calf pain during strides:</strong> Skip strides, easy 30 min only.</div>
+                            <div class="notes-box">Strides are short, low-injury-risk. Pain-free strides = green light to threshold mid-week.</div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div class="day-item">
+                        <div class="day-date">Wed, Apr 8</div>
+                        <span class="day-focus">Threshold Session (Conditional)</span>
+                        <div class="workout-block">
+                            <div class="workout-label">OPTION A: Threshold Repeats | OPTION B: Z2 Bike (60 min)</div>
+                            <div class="workout-description"><strong>Option A (if calf pain-free):</strong> 15 min easy warm-up + 4×4 min threshold repeats (Z4, ~7:35/mi, 2 min easy recovery) + 10 min cool-down (40 min total).</div>
+                            <div class="workout-description"><strong>Option B (if calf soreness):</strong> Z2 bike 60 min (zero calf load, steady aerobic).</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-wed-threshold" name="w3-wed-threshold" value="done">
+                                <label for="w3-wed-threshold">Threshold session (Option A) OR Z2 bike (Option B)</label>
+                            </div>
+                            <div class="purpose-box"><strong>CRITICAL DECISION POINT:</strong> Successfully executed = Phase 1 on track. If calf limits, extend recovery another week.</div>
+                            <div class="adaptation-box"><strong>If calf activates:</strong> Stop immediately, easy jog home.</div>
+                        </div>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div class="day-item">
+                        <div class="day-date">Thu, Apr 9</div>
+                        <span class="day-focus">Strength + Eccentric Protocol</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Leg Focus, 45 min) + Eccentric Calf Protocol (Progressed)</div>
+                            <div class="workout-description">Single-leg step-downs 3×10, downhill walk 8 min, heel-drop holds 3×20 sec/leg. Volume increased from Week 1.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-thu-str" name="w3-thu-str" value="done">
+                                <label for="w3-thu-str">Leg strength (45 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-thu-ecc" name="w3-thu-ecc" value="done">
+                                <label for="w3-thu-ecc">Eccentric calf protocol (progressed)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If soreness significant post-threshold:</strong> Reduce to 3×8 step-downs, 5 min downhill walk.</div>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="day-item">
+                        <div class="day-date">Fri, Apr 10</div>
+                        <span class="day-focus">Easy Cycling</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z2 Bike (75 min)</div>
+                            <div class="workout-description">Steady aerobic focus. Active recovery. Zero calf impact. Moderate resistance.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-fri-bike" name="w3-fri-bike" value="done">
+                                <label for="w3-fri-bike">Z2 bike (75 min, steady)</label>
+                            </div>
+                            <div class="notes-box">TL target ~65. High-volume week; cycling distributes load safely. Maintain Z2 (not tempo).</div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday -->
+                    <div class="day-item">
+                        <div class="day-date">Sat, Apr 11</div>
+                        <span class="day-focus">Strength + Easy Run</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Upper-Body, 45 min) + Z1 Easy Run (30 min)</div>
+                            <div class="workout-description">Anchor Saturday upper-body. Prepare for long-run progression Apr 12.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-sat-str" name="w3-sat-str" value="done">
+                                <label for="w3-sat-str">Upper-body strength (45 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-sat-run" name="w3-sat-run" value="done">
+                                <label for="w3-sat-run">Z1 easy run (30 min, flat)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If fatigue:</strong> Reduce run to 20 min. Strength is priority.</div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday -->
+                    <div class="day-item">
+                        <div class="day-date">Sun, Apr 12</div>
+                        <span class="day-focus">Long-Run Progression</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z2 Easy Long-Run (10–11 mi)</div>
+                            <div class="workout-description">Increase by +1 mi from Apr 5 baseline (9–10 mi). Flat or minimal elevation. Pace 8:45–9:15/mi. 87–100 min total.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-sun-longrun" name="w3-sun-longrun" value="done">
+                                <label for="w3-sun-longrun">Z2 long-run (10–11 mi)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w3-sun-stretch" name="w3-sun-stretch" value="done">
+                                <label for="w3-sun-stretch">Post-run calf stretching + foam roll</label>
+                            </div>
+                            <div class="purpose-box"><strong>CRITICAL:</strong> Confirm calf fully load-tolerant at sustained Z2. Pain-free = Week 4 can accelerate Dirty Dash build.</div>
+                            <div class="adaptation-box"><strong>If calf pain:</strong> Cut to 9 mi. If pain-free + energy high: attempt 11 mi.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 4 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <h3>Week 4: Apr 13–20</h3>
+                    <p>Dirty Dash HM Build + Taper Prep</p>
+                    <div class="week-theme">Peak Chronic EWMA for Dirty Dash (Apr 18); threshold session; long-run build; 3-day taper</div>
+                </div>
+                <div class="week-content">
+                    <!-- Monday -->
+                    <div class="day-item">
+                        <div class="day-date">Mon, Apr 13</div>
+                        <span class="day-focus">Recovery Base</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Easy Run (30 min) + Mobility</div>
+                            <div class="workout-description">Recovery from long-run. Assess post-Apr 12 calf status.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-mon-run" name="w4-mon-run" value="done">
+                                <label for="w4-mon-run">Z1 easy run (30 min, flat)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-mon-mob" name="w4-mon-mob" value="done">
+                                <label for="w4-mon-mob">Mobility routine</label>
+                            </div>
+                            <div class="notes-box">Calf should be near-fully resolved. If pain persists, signal overtraining.</div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="day-item">
+                        <div class="day-date">Tue, Apr 14</div>
+                        <span class="day-focus">Strength + Threshold</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Whole-Body, 45 min) + Threshold Session</div>
+                            <div class="workout-description">12 min easy warm-up + 3×5 min threshold repeats (Z4, ~7:35/mi, 2 min easy recovery) + 8 min cool-down (37 min total run). Final build-phase threshold.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-tue-str" name="w4-tue-str" value="done">
+                                <label for="w4-tue-str">Whole-body strength (45 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-tue-threshold" name="w4-tue-threshold" value="done">
+                                <label for="w4-tue-threshold">Threshold session (3×5 min repeats)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If Tuesday feels heavy:</strong> Reduce to 2×5 min repeats. Otherwise execute 3×5 min.</div>
+                            <div class="notes-box">TL target ~90. Load peaks this day. Expect TSB dip −3 to −5.</div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div class="day-item">
+                        <div class="day-date">Wed, Apr 15</div>
+                        <span class="day-focus">Recovery Cycling</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z2 Bike (60 min)</div>
+                            <div class="workout-description">Active recovery. No intensity spikes. Buffer before long-run.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-wed-bike" name="w4-wed-bike" value="done">
+                                <label for="w4-wed-bike">Z2 bike (60 min, easy)</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If legs tired:</strong> Reduce to 45 min Z1.</div>
+                        </div>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div class="day-item">
+                        <div class="day-date">Thu, Apr 16</div>
+                        <span class="day-focus">Pre-Race Taper</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Strength (Leg Focus, 30 min, Lighter) + Z1 Easy Run (20 min)</div>
+                            <div class="workout-description">Maintain neuromuscular engagement. No fatigue. 2 days before race.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-thu-str" name="w4-thu-str" value="done">
+                                <label for="w4-thu-str">Lighter leg strength (30 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-thu-run" name="w4-thu-run" value="done">
+                                <label for="w4-thu-run">Z1 easy run (20 min, very easy)</label>
+                            </div>
+                            <div class="notes-box">Acute load begins declining. TL target ~35.</div>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="day-item">
+                        <div class="day-date">Fri, Apr 17</div>
+                        <span class="day-focus">Pre-Race Recovery</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Recovery Jog (15 min) + Strides + Stretching</div>
+                            <div class="workout-description">Final neuromuscular activation 24 hr pre-race. Mobility and stretch for muscle readiness.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-fri-jog" name="w4-fri-jog" value="done">
+                                <label for="w4-fri-jog">Z1 recovery jog (15 min) + strides</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-fri-stretch" name="w4-fri-stretch" value="done">
+                                <label for="w4-fri-stretch">Full stretching routine</label>
+                            </div>
+                            <div class="notes-box"><strong>ZERO-LOAD DAY.</strong> TL &lt;20. Sleep 8.5+h. Hydrate. Early dinner, carbs.</div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday - RACE -->
+                    <div class="day-item">
+                        <div class="day-date">Sat, Apr 18</div>
+                        <span class="day-focus">RACE DAY</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Dirty Dash Half Marathon <span class="badge-priority badge-b">B Priority</span></div>
+                            <div class="workout-description">Trail half-marathon. Pacing strategy: Z3 threshold effort (not all-out VO₂max). Target: 01:45–01:50 (pace ~8:00–8:30/mi). Pre-race: 20 min warm-up + strides. Post-race: 10 min easy jog recovery + stretching.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-sat-race" name="w4-sat-race" value="done">
+                                <label for="w4-sat-race">Complete Dirty Dash HM race</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-sat-recovery" name="w4-sat-recovery" value="done">
+                                <label for="w4-sat-recovery">Post-race recovery jog + full stretching</label>
+                            </div>
+                            <div class="purpose-box"><strong>PURPOSE:</strong> B-priority race. Build threshold fitness for May 30 Adventure Race. Test 90+ min sustained effort with calf fully recovered.</div>
+                            <div class="adaptation-box"><strong>If calf pain emerges:</strong> Dial back to Z2 and focus on safe completion.</div>
+                            <div class="notes-box">Acute load spike ~110–120 TL. Expect TSB dip −8 to −12 post-race (normal for HM). Phase 1 peaks here.</div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday -->
+                    <div class="day-item">
+                        <div class="day-date">Sun, Apr 19</div>
+                        <span class="day-focus">Post-Race Recovery</span>
+                        <div class="workout-block">
+                            <div class="workout-label">24–48 hr Full Recovery: Walk (15–20 min) OR Rest + Stretching/Mobility</div>
+                            <div class="workout-description">Recover from HM effort. Assess calf strain status post-race. Consolidate Phase 1 training effect.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-sun-walk" name="w4-sun-walk" value="done">
+                                <label for="w4-sun-walk">Walk 15–20 min or full rest</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-sun-stretch" name="w4-sun-stretch" value="done">
+                                <label for="w4-sun-stretch">Easy stretching + foam roll (calf focus)</label>
+                            </div>
+                            <div class="purpose-box"><strong>CRITICAL ASSESSMENT:</strong> Pain-free = Phase 2 proceeds to full build. Pain present = Phase 2 extends recovery week.</div>
+                            <div class="notes-box"><strong>ZERO-LOAD DAY.</strong> Post-race calf assessment is essential.</div>
+                        </div>
+                    </div>
+
+                    <!-- Monday Apr 20 - Phase Transition -->
+                    <div class="day-item">
+                        <div class="day-date">Mon, Apr 20</div>
+                        <span class="day-focus">Phase 2 Transition</span>
+                        <div class="workout-block">
+                            <div class="workout-label">Z1 Easy Run (25 min) + Mobility + Full Stretching</div>
+                            <div class="workout-description">Transition to Phase 2 with recovery week. Assess post-HM fatigue. Confirm calf healing.</div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="w4-mon-transition" name="w4-mon-transition" value="done">
+                                <label for="w4-mon-transition">Z1 easy run (25 min) + mobility</label>
+                            </div>
+                            <div class="adaptation-box"><strong>If calf pain evident (>1/10):</strong> Walk only + stretching.</div>
+                            <div class="purpose-box"><strong>Phase 1 Conclusion:</strong> Chronic EWMA expected ~70–72. Phase 2 begins with 1-week easy recovery (Apr 22–28), then 2–3 week build ramp to 75–80 by May 10 (5 weeks pre-Michigan Adventure Race May 30).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase Summary & Targets -->
+        <div class="section-title">Phase 1 Summary & Critical Success Factors</div>
+
+        <div class="targets-box">
+            <h4>Phase 1 Outcome Targets (by Apr 20)</h4>
+            <ul>
+                <li><strong>Chronic EWMA:</strong> 70–72 (gentle decay from 76.9 baseline)</li>
+                <li><strong>Acute EWMA (post-race):</strong> 65–70 (post-race taper recovery)</li>
+                <li><strong>ACWR:</strong> 0.90–1.00 (stable, recovered)</li>
+                <li><strong>Ramp Rate:</strong> +6–8 units/week (disciplined, <+8 maintained)</li>
+                <li><strong>Calf Strain Status:</strong> FULLY RESOLVED; eccentric loading (downhill, technical) tolerated at Z2 intensity</li>
+                <li><strong>Cycling Base:</strong> 2–3 Z2 sessions/week established (90–120 min sustainable)</li>
+                <li><strong>VO₂ Max (Running):</strong> Stabilized at 52; expect +0.5–1.0 recovery if Chronic kept 65–70</li>
+                <li><strong>Total Volume:</strong> ~140–160 km running + 180–220 km cycling over 28 days</li>
+                <li><strong>Races Completed:</strong> 2 (Flirt with Dirt Mar 28 fitness test; Dirty Dash HM Apr 18 build race)</li>
+            </ul>
+        </div>
+
+        <div class="constraints-box">
+            <h4>Critical Success Factors – DO NOT COMPROMISE</h4>
+            <ul>
+                <li><strong>Calf Strain Recovery:</strong> Pain MUST remain &lt;1/10 on easy runs, &lt;2/10 on threshold/long efforts. If pain escalates, revert immediately to Week 1–2 protocol (easy runs only, no threshold/long-run until day 14+ post-incident).</li>
+                <li><strong>Sleep Debt Repayment:</strong> Target 8.5+ hr sleep/night through Apr 10. Shortfall delays calf healing and VO₂ rebound. Non-negotiable.</li>
+                <li><strong>Threshold Sessions as Decision Points (Apr 8 + Apr 14):</strong> If either triggers calf pain, cancel remaining intensity and extend recovery week immediately.</li>
+                <li><strong>Cycling Integration Must Be Tracked:</strong> 2–3 sessions/week (60–90 min Z2) are PRIMARY aerobic base builders. Without load system tracking, ACWR calculations skew running-heavy. Use TrainingPeaks, Whoop, or coach log.</li>
+                <li><strong>Recovery Days Enforcement:</strong> Move from current 1 per 10–12 days → 1–2 per 7 days. Monday or Friday easy sessions can become zero-load days if cumulative fatigue evident (TSB &lt;−5, RHR up &gt;1 bpm, subjective fatigue).</li>
+                <li><strong>Dirty Dash HM Taper (Apr 16–18):</strong> Thu–Fri must be 48 hr ZLD + mobility only. Acute load should dip to 50–60 EWMA by race day to ensure readiness.</li>
+                <li><strong>Post-Phase 1 Assessment (Apr 19–20):</strong> If calf pain-free AND Dirty Dash HM executed well, Phase 2 proceeds to full build (hill repeats, 2–2.5 hr Z2, cycling 90–120 min). If calf pain persists OR race poor quality, extend Phase 1 recovery (Apr 20–May 3) before Phase 2 ramp.</li>
+            </ul>
+        </div>
+
+        <div class="success-factors">
+            <h3>Phase 1: Key Takeaways for the Athlete</h3>
+            <ol>
+                <li><strong>Calf Strain is PRIMARY Constraint:</strong> Every session is gated by pain-free status. If pain ever exceeds 2/10 during running or 3/10 at any intensity, STOP and revert to walk-only + stretching for 2–3 days.</li>
+                <li><strong>Cycling is NOT Optional:</strong> 2–3 Z2 bike sessions/week are as important as runs for aerobic base and calf load distribution. Track ALL cycling in your TL system.</li>
+                <li><strong>Sleep is MEDICINE:</strong> You owe yourself −5.74 h cumulative sleep deficit. Prioritize 8.5–9.0 h sleep opportunity/night through Apr 10. This accelerates calf healing, VO₂ recovery, and Phase 2 readiness.</li>
+                <li><strong>Strength Program is ANCHOR (Tue/Thu/Sat):</strong> Do NOT skip. Morning timing is ideal. Pair with low-intensity runs (<Z2) same-day to avoid CNS fatigue. Eccentric calf drills (Week 1–3) are injury-prevention priority.</li>
+                <li><strong>Travel Week (Mar 29–Apr 2) is Maintenance Only:</strong> Do not feel pressure to train hard in Germany. 20–30 min easy walks, light strength if gym available, and stretching are sufficient. Sleep and stress management are priorities.</li>
+                <li><strong>Dirty Dash HM (Apr 18) is Priority B, NOT Peak:</strong> Target 01:45–01:50 is achievable on 3-week build post-injury, but NOT guaranteed if calf recurs or sleep debt extends. Race with patience; finish safely over sub-goal chasing.</li>
+                <li><strong>Week 4 Will Feel Heavy:</strong> Peak Chronic EWMA ~75, multiple sessions back-to-back is normal and intentional. TSB will dip −5 to −8. Expect fatigue Apr 15–17; this is intentional pre-race taper.</li>
+                <li><strong>Post-Phase 1 Reflection (Apr 19–20):</strong> Assess calf behavior, race quality, and subjective fatigue. Pain-free + good race = Phase 2 builds harder. Pain lingers or fatigue significant = Phase 2 extends recovery before intensity ramp.</li>
+            </ol>
+        </div>
+
+        <div class="handoff-notes">
+            <h3>Handoff Notes: From Coach to Athlete</h3>
+            <ul>
+                <li><strong>Why Phase 1 is Short:</strong> Mar 18 strain required immediate load management. This plan front-loads recovery (Weeks 1–2) and schedules 2 race-quality stress tests (Mar 28, Apr 18) to gauge readiness trajectory. You'll NOT be doing hard training for the first 2 weeks—that's intentional healing.</li>
+                <li><strong>The Cycling Priority:</strong> Your running VO₂ compressed from 56–60 potential down to 52 due to rapid ramp and strain. Cycling (VO₂ 58–60) is your path back. 2–3 Z2 bike sessions/week distribute aerobic load safely and allow calf recovery. They count toward your training stress equally—so track them religiously.</li>
+                <li><strong>Why Threshold is Gated by Calf Confidence:</strong> Wed Apr 8 threshold session is a DECISION POINT. If strides (Apr 7) feel smooth, you've got green light for threshold. If even strides cause twinges, skip threshold and extend recovery. There's no prize for forcing intensity too soon.</li>
+                <li><strong>The Travel Week Philosophy:</strong> Germany work trip (Mar 29–Apr 2) is a built-in deload. Use it. Easy 20–30 min walks, light gym work if available, full stretching. Sleep is the medication here. You'll come back to Cleveland fresh, not broken.</li>
+                <li><strong>Dirty Dash as a B-Race Tool:</strong> Apr 18 Dirty Dash HM is not your peak effort (that's Sep 5 Leave No Trace A-priority). It's a threshold-building race to stress-test fitness 4 weeks before the Michigan Adventure Race (May 30). Pace it at Z3 (hard but controlled), not all-out VO₂max. Finish with calf intact so you can build to May 30.</li>
+                <li><strong>The Taper is Real:</strong> Apr 16–18 will feel weirdly easy compared to the build. This is intentional. Reduced volume + maintained strength = peak readiness. Trust it. You'll feel "slow" on Apr 16–17, then lightning-fast on Apr 18 race day.</li>
+                <li><strong>Recovery Days are Not Punishment:</strong> Moving from 1 ZLD per 10–12 days to 1–2 per 7 days might feel like "less training." It's not. It's *smarter* training. Your injury at day 18 happened because you had only 1 ZLD in 12 days. Enforce 1–2 per 7 going forward, and you prevent re-injury.</li>
+                <li><strong>Post-Apr 18 Assessment is Non-Negotiable:</strong> Spend Apr 19–20 honestly assessing: Did the calf stay pain-free? Did the race feel solid (pacing, effort, finish quality)? Are you feeling fresh or wrecked? These answers determine if Phase 2 (starting Apr 22) goes full-gas build or extends recovery. Be honest. Your May 30 adventure race depends on it.</li>
+                <li><strong>You Have a Long Season Ahead:</strong> This 4-week Phase 1 is *just* the restart. You've got 31 more weeks (through Nov 21) with two adventure races and four half-marathon/trail races. Getting Phase 1 right (calf healed, load managed, cycling integrated) sets up the entire year. Don't rush it.</li>
+                <li><strong>One More Thing—Strength Sessions Are Non-Negotiable:</strong> Tue/Thu/Sat strength work (whole-body/leg/upper) is your injury insurance. Pair with easy runs same-day (don't compound fatigue), execute in the morning, and let the eccentric calf drills (weeks 1–3) rebuild resilience. Miss a strength day only if sick/injured; otherwise, show up.</li>
+            </ul>
+        </div>
+
+        <!-- Zones Reference -->
+        <div class="section-title">Training Zones Reference</div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+            <div class="overview-card">
+                <h3>Running Zones</h3>
+                <ul>
+                    <li><strong>Z1 (Easy):</strong> ≤139 bpm (~10:00–11:00 min/mi) | Recovery, aerobic base</li>
+                    <li><strong>Z2 (Endurance):</strong> 140–159 bpm (~8:30–9:45 min/mi) | Long-runs, cycling base</li>
+                    <li><strong>Z3 (Tempo):</strong> 160–174 bpm (~7:45–8:30 min/mi) | Sustained effort, threshold</li>
+                    <li><strong>Z4 (Threshold):</strong> 175–185 bpm (~6:30–7:30 min/mi) | VO₂ work, race pacing</li>
+                    <li><strong>Z5 (VO₂max):</strong> >186 bpm (<6:30 min/mi) | High-intensity repeats</li>
+                </ul>
+            </div>
+
+            <div class="overview-card">
+                <h3>Cycling Zones (FTP 274W)</h3>
+                <ul>
+                    <li><strong>Z1 (Easy):</strong> <136W (50–60% FTP) | Recovery base</li>
+                    <li><strong>Z2 (Endurance):</strong> 137–219W (50–80% FTP) | Sustainable 60–120 min aerobic</li>
+                    <li><strong>Z3 (Tempo):</strong> 220–248W (80–90% FTP) | 20–45 min sustained</li>
+                    <li><strong>Z4 (Threshold):</strong> 249–274W (91–100% FTP) | 8–20 min intervals</li>
+                    <li><strong>Z5 (VO₂max):</strong> >274W (>100% FTP) | 3–8 min repeats</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Alexis Castel | Phase 1 Training Plan</strong></p>
+        <p>March 23 – April 20, 2026 | Recovery & Rebalance</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            Plan Status: ACTIVE | Next Phase: Phase 2 (Adventure Race Build) begins April 22, 2026
+        </p>
+    </footer>
+
+</body>
+</html>
+```

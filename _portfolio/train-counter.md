@@ -15,6 +15,8 @@ Future Developments:
 - Speed Estimation: Using the Doppler effect to estimate the speed of each passing train.
 - Web Interface: Creating a small web UI to make real-time train data accessible remotely.
 
+The repository is located [here](https://github.com/alexiscastel/TrainDetector).
+
 ## Model training report:
 
 ### Label Distribution
