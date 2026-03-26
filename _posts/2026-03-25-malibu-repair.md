@@ -2,21 +2,7 @@
 layout: single
 title: "First Carbon Composite Repair"
 excerpt: "A cracked DLG wing tip turned into my first solo carbon repair, from planning the fix to vacuum bagging the final ply overnight."
-header:
-  teaser: "https://alexiscastel.github.io/files/malibu-repair/4.jpg"
-categories:
-  - RC Planes
-tags:
-  - DLG
-  - carbon fiber
-  - composite repair
-  - vacuum bagging
-  - model aviation
----
----
-layout: single
-title: "First Carbon Composite Repair"
-excerpt: "A cracked DLG wing tip turned into my first solo carbon repair, from planning the fix to vacuum bagging the final ply overnight."
+date: 2026-03-25
 header:
   teaser: "https://alexiscastel.github.io/files/malibu-repair/4.jpg"
 categories:
