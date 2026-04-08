@@ -1,0 +1,8 @@
+{% include base_path %}
+
+{% for section in site.blog_sections %}
+  {% assign section_posts = site.posts | where_exp: "post", "post.tags contains section.tag" %}
+  {% if section_posts.size > 0 %}
+    <li class="masthead__menu-item"><a href="{{ base_path }}{{ section.url }}">{{ section.title }}</a></li>
+  {% endif %}
+{% endfor %}

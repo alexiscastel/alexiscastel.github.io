@@ -1,0 +1,40 @@
+{% include base_path %}
+
+{% assign section_posts = site.posts | where_exp: "post", "post.tags contains include.section_tag" %}
+
+{% if section_posts.size > 0 %}
+  {% capture raw_section_tags %}{% for post in section_posts %}{% for tag in post.tags %}{% unless tag contains 'section:' %}{{ tag }}|{% endunless %}{% endfor %}{% endfor %}{% endcapture %}
+  {% assign section_tags = raw_section_tags | split: "|" | uniq | sort %}
+  {% assign visible_tag_count = 0 %}
+
+  {% for tag in section_tags %}
+    {% unless tag == "" %}
+      {% assign visible_tag_count = visible_tag_count | plus: 1 %}
+    {% endunless %}
+  {% endfor %}
+
+  {% if visible_tag_count > 0 %}
+    <p class="page__taxonomy">
+      <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Topics in this section: </strong>
+      <span itemprop="keywords">
+      {% for tag in section_tags %}
+        {% unless tag == "" %}
+          <a href="{{ base_path }}/tags/#{{ tag | slugify }}" class="page__taxonomy-item" rel="tag">{{ tag }}</a>{% unless forloop.index == visible_tag_count %}<span class="sep">, </span>{% endunless %}
+        {% endunless %}
+      {% endfor %}
+      </span>
+    </p>
+  {% endif %}
+
+  {% capture written_year %}'None'{% endcapture %}
+  {% for post in section_posts %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No published posts are in this section yet.</p>
+{% endif %}

@@ -8,6 +8,7 @@ header:
 categories:
   - RC Planes
 tags:
+  - section:rc-planes
   - DLG
   - carbon fiber
   - composite repair

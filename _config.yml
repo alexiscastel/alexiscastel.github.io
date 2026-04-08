@@ -83,10 +83,21 @@ publication_category:
   books:
     title: 'Books'  
 
+blog_sections:
+  - title: "Acoustics / Shock / Vibration"
+    url: /acoustics-shock-vibration/
+    tag: "section:acoustics"
+  - title: "RC Planes / Composites"
+    url: /rc-planes/
+    tag: "section:rc-planes"
+  - title: "Outdoors / Sports"
+    url: /outdoors-sports/
+    tag: "section:outdoors-sports"
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
-words_per_minute         : 20
+words_per_minute         : 180
 future                   : false
 read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
 comments:
