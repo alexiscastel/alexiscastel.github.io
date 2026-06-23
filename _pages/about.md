@@ -7,23 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I'm Alexis Castel, a mechanical engineer working in aerospace vibro-acoustics, structural dynamics, simulation, and testing. This site is where I collect the public side of that work: publications, presentations, technical notes, personal projects, RC aircraft experiments, composites repairs, outdoor trips, and the occasional idea that started as “I wonder if this would work?”
+I'm Alexis Castel, a mechanical engineer with a background in vibro-acoustics, structural dynamics, simulation, and testing.
 
-The common thread is practical curiosity. I like building things, measuring them, modeling them, breaking them carefully when necessary, and learning from the mismatch between theory and reality.
+This site is part professional page, part project notebook. It has my CV, publications, and presentations, but also the personal projects that keep me curious: RC aircraft, composite repairs, 3D printing, sensors, small tools, outdoor trips, race notes, and other things I wanted to document before I forgot the details.
 
-## Start here
+I spend a lot of time thinking about how things behave in the real world: how they vibrate, make noise, break, get repaired, or differ from the model that was supposed to predict them. Sometimes that turns into a paper or presentation. Sometimes it turns into a broken RC wing, a muddy trail race, or a small weekend experiment.
 
-- **[Publications & Talks]({{ '/publications-talks/' | relative_url }})** — public papers and presentations on vibro-acoustics, shock, vibration, simulation, test correlation, aerospace environments, composites, and probabilistic methods.
-- **[Technical Notes]({{ '/technical-notes/' | relative_url }})** — engineering notes and explainers I want to keep public, general, and useful without getting into confidential work details.
-- **[Projects]({{ '/projects/' | relative_url }})** — personal builds and small tools: speakers, train detection, training-data workflows, and RC aircraft scripts.
-- **[RC / Composites]({{ '/rc-composites/' | relative_url }})** — flying, repairing, testing, and learning with lightweight aircraft and composite structures.
-- **[Outdoors / Personal]({{ '/outdoors-personal/' | relative_url }})** — trail running, kayaking, adventure racing, training notes, and other things that keep life interesting.
-- **[CV]({{ '/cv/' | relative_url }})** — a compact professional summary, education, skills, publications, and service.
-
-## Technical themes
-
-Most of my professional work lives around structural dynamics and vibro-acoustics: how mechanical systems respond to vibration, shock, acoustic loading, damping, and test environments. Publicly, I try to focus on themes that are safe to share and useful to other engineers: simulation methods, model/test correlation, uncertainty, composites, automation, and the practical trade-offs behind engineering decisions.
-
-## Still a personal site
-
-I do not want this to become a polished corporate portfolio. The personal projects and outdoor notes matter because they show how I actually learn: by trying things, making mistakes, iterating, and staying curious. Some pages are technical. Some are about muddy races or a kayak trip. That mix is intentional.
+Start here
+[Publications & Talks]({{ '/publications-talks/' | relative_url }}) — public papers and presentations on vibro-acoustics, structural dynamics, simulation, testing, composites, and related methods.
+[CV]({{ '/cv/' | relative_url }}) — my professional background, education, skills, and selected publications.
+[Technical Notes]({{ '/technical-notes/' | relative_url }}) — engineering notes and explanations I can share publicly.
+[Projects]({{ '/projects/' | relative_url }}) — personal builds, small tools, experiments, and side ideas.
+[RC / Composites]({{ '/rc-composites/' | relative_url }}) — model aircraft, composite repairs, lightweight structures, and lessons learned.
+[Outdoors / Personal]({{ '/outdoors-personal/' | relative_url }}) — trail running, kayaking, adventure racing, training notes, and life outside engineering.
