@@ -84,14 +84,14 @@ publication_category:
     title: 'Books'  
 
 blog_sections:
-  - title: "Acoustics / Shock / Vibration"
-    url: /acoustics-shock-vibration/
+  - title: "Technical Notes"
+    url: /technical-notes/
     tag: "section:acoustics"
-  - title: "RC Planes / Composites"
-    url: /rc-planes/
+  - title: "RC / Composites"
+    url: /rc-composites/
     tag: "section:rc-planes"
-  - title: "Outdoors / Sports"
-    url: /outdoors-sports/
+  - title: "Outdoors / Personal"
+    url: /outdoors-personal/
     tag: "section:outdoors-sports"
 
 # Site Settings

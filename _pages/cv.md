@@ -21,11 +21,11 @@ Education
 Work experience
 ======
 * 2022-present: Technical Expert Aerospace Vibro-Acoustics - <i>Keysight Technologies | Cleveland, OH, USA</i>
-  * Provides technical expertise in structural dynamics and acoustic simulation workflows for aerospace applications, with activities spanning customer projects, presales studies, training, and methodology development.
-  * Contributes to software development planning by bringing customer feedback into feature discussions and acceptance criteria.
-  * Mentors and provides technical coaching to a team of three application engineers.
-  * Develops advanced methodologies including simulation resource forecasting from historical solver data using Bayesian regression, Bayesian optimization for coupled finite element-boundary element models, shock simulation workflows, and damping projection models based on modal strain energy.
-  * Prototypes new analysis features in Python to accelerate methodology development and secure early customer feedback.
+  * Provides technical expertise in structural dynamics, vibro-acoustics, and acoustic simulation workflows for aerospace applications.
+  * Works on applied simulation methods for shock, damping, coupled acoustic-structural models, probabilistic workflows, and engineering decision support.
+  * Translates customer and application-engineering feedback into practical methodology guidance, training material, and product-development input.
+  * Mentors and provides technical coaching to a team of application engineers.
+  * Uses Python and engineering automation to prototype public-facing methods, accelerate studies, and communicate analysis trade-offs.
 
 * 2021-2022: Technical Fellow - <i>ZIN Technologies | Middleburg Heights, OH, USA</i><br>
   2018-2021: Lead Vibro-Acoustics Engineer

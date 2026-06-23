@@ -1,14 +1,16 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Projects"
+permalink: /projects/
 author_profile: true
+redirect_from:
+  - /portfolio/
 ---
 
-{% include base_path %}
+Personal projects are a big part of this site. Some are useful tools, some are experiments, and some are just good excuses to combine code, measurement, simulation, making, and curiosity.
 
+{% include base_path %}
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
-
