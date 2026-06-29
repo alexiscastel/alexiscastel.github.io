@@ -8,11 +8,11 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Publications & Talks"
+  - title: "Publications"
     url: /publications-talks/
 
-  - title: "Technical Notes"
-    url: /technical-notes/
+  - title: "CV"
+    url: /cv/
 
   - title: "Projects"
     url: /projects/
@@ -20,8 +20,5 @@ main:
   - title: "RC / Composites"
     url: /rc-composites/
 
-  - title: "Outdoors / Personal"
+  - title: "Outdoors"
     url: /outdoors-personal/
-
-  - title: "CV"
-    url: /cv/
