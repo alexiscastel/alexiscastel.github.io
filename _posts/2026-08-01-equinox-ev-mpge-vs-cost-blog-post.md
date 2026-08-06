@@ -1,16 +1,23 @@
 ---
-layout: post
+layout: single
 title: "My EV Gets 96 MPGe—and Costs the Same as a 52-MPG Gas Car"
 date: 2026-08-06
+excerpt: "A wall-to-road look at the Equinox EV's energy use, MPGe, and what its home charging actually costs per mile."
+header:
+  teaser: "https://alexiscastel.github.io/files/equinox-ev-energy/equinox-ev.svg"
 categories: [sustainability, electric-vehicles]
-tags: [Chevrolet Equinox EV, MPGe, EV charging, electricity, energy efficiency]
+tags: [section:energy-environment, Chevrolet Equinox EV, MPGe, EV charging, electricity, energy efficiency]
 ---
 
 At the end of April 2025, we bought a Chevrolet Equinox EV. Since then, we have driven it about **15,000 miles**.
 
+![Our Chevrolet Equinox EV shortly after we bought it.]({{ '/files/equinox-ev-energy/equinox-ev.svg' | relative_url }})
+
 We have used public chargers occasionally, but not very much. My best estimate is that approximately **1,200 of those miles** came from public charging. That leaves about **13,800 miles charged at home**.
 
 Fortunately, I have an Emporia energy monitor installed in the house. The garage circuit is almost entirely the EV charger, which gave me a chance to answer a deceptively simple question:
+
+![The Emporia Vue monitor and circuit sensors used to measure our household energy use.]({{ '/files/equinox-ev-energy/emporia-vue-monitor.svg' | relative_url }})
 
 > How much electricity does the car actually use—and what does that cost per mile?
 
@@ -18,7 +25,9 @@ The answer led me to a distinction I had never fully appreciated: **MPGe measure
 
 ## Measuring electricity at the wall
 
-From May 2025 through the beginning of August 2026, the garage circuit used approximately **4,842 kWh**.
+From May 2025 through the beginning of August 2026, the garage circuit used approximately **4,842 kWh**. The chart below shows the garage circuit's **3,160 kWh** during calendar year 2025, the largest complete-year portion of that total.
+
+![Monthly energy measured on the garage circuit during 2025, totaling 3,160 kWh.]({{ '/files/equinox-ev-energy/2025-garage-energy.svg' | relative_url }})
 
 | Measurement | Estimate |
 |---|---:|
@@ -77,7 +86,11 @@ My Emporia result is therefore much more directly comparable to EPA MPGe than a 
 
 This was the surprising part.
 
-My July 2026 electric bill was **$188.61 for 881 kWh**. Of that, $6.50 was a fixed monthly customer charge that I would pay even without the EV. Excluding that fixed charge gives an incremental electricity price of approximately:
+My July 2026 electric bill was **$188.61 for 881 kWh**. For context, the Emporia mains measurement below shows the seasonality of the home's overall electricity use during 2025, totaling about **11,800 kWh**.
+
+![Monthly whole-home electricity use during 2025, totaling approximately 11,800 kWh.]({{ '/files/equinox-ev-energy/2025-home-energy.svg' | relative_url }})
+
+Of that July bill, $6.50 was a fixed monthly customer charge that I would pay even without the EV. Excluding that fixed charge gives an incremental electricity price of approximately:
 
 \[
 \frac{\$188.61-\$6.50}{881\text{ kWh}}

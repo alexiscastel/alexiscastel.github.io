@@ -17,6 +17,13 @@ I spend a lot of time thinking about how things behave in the real world: how th
 - **[Publications & Talks]({{ '/publications-talks/' | relative_url }})** — public papers and presentations on vibro-acoustics, shock, vibration, simulation, test correlation, aerospace environments, composites, and probabilistic methods.
 - **[Technical Notes]({{ '/technical-notes/' | relative_url }})** — engineering notes and explainers I want to keep public, general, and useful without getting into confidential work details.
 - **[Projects]({{ '/projects/' | relative_url }})** — personal builds and small tools: speakers, train detection, training-data workflows, and RC aircraft scripts.
+- **[Energy & Environment]({{ '/energy-environment/' | relative_url }})** — practical notes on household energy, electric vehicles, electricity markets, and environmental choices.
 - **[RC / Composites]({{ '/rc-composites/' | relative_url }})** — flying, repairing, testing, and learning with lightweight aircraft and composite structures.
 - **[Outdoors / Personal]({{ '/outdoors-personal/' | relative_url }})** — trail running, kayaking, adventure racing, training notes, and other things that keep life interesting.
 - **[CV]({{ '/cv/' | relative_url }})** — a compact professional summary, education, skills, publications, and service.
+
+## Latest posts
+
+{% for post in site.posts limit:5 %}
+  {% include archive-single.html %}
+{% endfor %}
