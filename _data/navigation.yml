@@ -17,6 +17,9 @@ main:
   - title: "Projects"
     url: /projects/
 
+  - title: "Energy"
+    url: /energy-environment/
+
   - title: "RC / Composites"
     url: /rc-composites/
 

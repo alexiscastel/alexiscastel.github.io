@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: single
 title: "My EV Gets 96 MPGe—and Costs the Same as a 52-MPG Gas Car"
 date: 2026-08-06
+excerpt: "A wall-to-road look at the Equinox EV's energy use, MPGe, and what its home charging actually costs per mile."
 categories: [sustainability, electric-vehicles]
-tags: [Chevrolet Equinox EV, MPGe, EV charging, electricity, energy efficiency]
+tags: [section:energy-environment, Chevrolet Equinox EV, MPGe, EV charging, electricity, energy efficiency]
 ---
 
 At the end of April 2025, we bought a Chevrolet Equinox EV. Since then, we have driven it about **15,000 miles**.

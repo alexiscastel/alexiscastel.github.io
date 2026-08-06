@@ -84,6 +84,9 @@ publication_category:
     title: 'Books'  
 
 blog_sections:
+  - title: "Energy & Environment"
+    url: /energy-environment/
+    tag: "section:energy-environment"
   - title: "Technical Notes"
     url: /technical-notes/
     tag: "section:acoustics"
