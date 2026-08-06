@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: single
 title: "The Devil Is in the RECs: Choosing Green Electricity in Ohio"
 date: 2026-08-06
+excerpt: "What I learned while comparing Ohio electricity suppliers, renewable energy certificates, and NOPEC's green options."
 categories: [sustainability, ohio]
-tags: [electricity, renewable-energy, RECs, Green-e, NOPEC]
+tags: [section:energy-environment, electricity, renewable-energy, RECs, Green-e, NOPEC]
 ---
 
 For years, I had not paid much attention to my electricity supplier. I had selected Energy Harbor and, at some point, asked for carbon-free electricity. Then the original contract expired. I was automatically enrolled in a new, more expensive contract, and I did not treat it as urgent enough to revisit.
