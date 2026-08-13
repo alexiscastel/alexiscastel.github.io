@@ -5,6 +5,7 @@ A personal website based on [Academic Pages](https://github.com/academicpages/ac
 ## Content
 
 - Home
+- Posts
 - Project portfolio
 - Publications
 - CV
