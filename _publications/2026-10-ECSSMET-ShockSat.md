@@ -3,7 +3,6 @@ title: 'Shock Response Prediction of a Spacecraft Structure Using Explicit Finit
   Damping Identification, and Test Correlation'
 collection: publications
 last_modified_at: 2026-11-16
-citation_metadata: false
 category: conference_papers
 publication_type: Conference paper
 permalink: /publication/2026-10-ECSSMET-ShockSat
@@ -21,15 +20,18 @@ topics:
 - Nonlinear Shock
 - Aerospace
 - Experimental Validation
-description: Using the NASA ShockSat benchmark, this paper studies spacecraft shock propagation with explicit finite
-  element analysis. It examines model conversion, damping identification, preload, contact, friction, and correlation
-  with experimental measurements.
+description: This paper investigates explicit finite element prediction of spacecraft shock response using the NASA
+  ShockSat benchmark and measured modal-hammer data. It covers model conversion, damping identification, and correlation
+  of acceleration time histories and shock response spectra. Preload, contact, and friction are introduced at structural
+  interfaces to assess how damping calibrated on a simpler model transfers to an assembled structure with additional
+  energy dissipation mechanisms.
 metadata_sources:
 - https://elib.dlr.de/227675/
-- User-provided individual paper metadata
-verification_note: Individual title, author formatting, pagination, and summary await confirmation against the full
-  proceedings. This record links to the proceedings; no individual paper DOI has been assigned.
+- /files/ECSSMET_2026_Spacecraft_Shock_Response_Prediction.pdf
 related_publications:
 - /publication/2025-SCLV-Advancing-Shock-Simulation
+paperurl: /files/ECSSMET_2026_Spacecraft_Shock_Response_Prediction.pdf
+redirect_from:
+- /publication/2026-09-21-ECSSMET-Spacecraft-Shock-Response-Prediction
 ---
-Using the NASA ShockSat benchmark, this paper studies spacecraft shock propagation with explicit finite element analysis. It examines model conversion, damping identification, preload, contact, friction, and correlation with experimental measurements.
+This paper investigates explicit finite element prediction of spacecraft shock response using the NASA ShockSat benchmark and measured modal-hammer data. It covers model conversion, damping identification, and correlation of acceleration time histories and shock response spectra. Preload, contact, and friction are introduced at structural interfaces to assess how damping calibrated on a simpler model transfers to an assembled structure with additional energy dissipation mechanisms.

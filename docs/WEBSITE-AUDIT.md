@@ -2,7 +2,7 @@
 
 Prepared November 16, 2026. Repository: `alexiscastel/alexiscastel.github.io`; baseline commit `b83e99b`. This report records the changes and validation completed during the local audit. No deployment was performed as part of the audit. The checkout was clean when work began.
 
-The scientific and structural improvements are implemented. **Direct inspection of the three ECSSMET 2026 papers remains incomplete:** DLR's record was readable, but its 87 MB proceedings PDF exceeded the web reader's limit and the cloud environment blocked the direct download. The three records therefore retain the author lists, titles, pages, and summaries supplied in the request, with explicit review notes. Their Google Scholar citation tags and scholarly JSON-LD are withheld until those details can be verified. No paper extracts or full proceedings PDF were added to the repository.
+The scientific and structural improvements are implemented. Before publication, the newer `master` commit `6d736af` was integrated, preserving its three ECSSMET 2026 PDF downloads. The individual papers now verify their titles, author order, printed page ranges, and research summaries; scholarly citation tags and JSON-LD are enabled for these three records. The diffuseness paper's title page lists **Arloe W. Mayne III**, correcting the previously supplied name Alfred. Existing September publication URLs redirect to the consolidated October records, so there is one bibliography entry per paper. The full 87 MB proceedings PDF was not added. The AIAA 2026 record still awaits essential source verification and retains its citation-metadata hold.
 
 ## 1. Changes implemented
 
@@ -59,17 +59,17 @@ Three ECSSMET 2026 records were added, linked to the [DLR proceedings record](ht
 
 | New page | Author order retained | Pages | Verification status |
 |---|---|---|---|
-| `2026-10-ECSSMET-Ascent-Loading.md` — Launch Vehicle Ascent Phase Loading: Comparing Traditional and CFD-Based Approaches | Alexis Castel; Arun Prakash Ganapathy | 906–914 | Individual metadata/summary supplied by user; full-PDF verification pending. Cross-linked with the existing single-author SCLV presentation. |
-| `2026-10-ECSSMET-ShockSat.md` — Shock Response Prediction of a Spacecraft Structure Using Explicit Finite Element Analysis: Model Conversion, Damping Identification, and Test Correlation | Arun Prakash Ganapathy; Alexis Castel; Simon Martin | 794–803 | Individual metadata/summary supplied by user; full-PDF verification pending. Author order unchanged. |
-| `2026-10-ECSSMET-DFA-Diffuseness.md` — The Importance of the Degree of Diffuseness of the Achieved Acoustic Field on the Vibroacoustic Response of a Test Article from Direct Field Acoustic Testing | Marcos A. Underwood; Alfred W. Mayne III; Alexis Castel | 468–478 | Exact title and name formatting still require full-PDF verification. |
+| `2026-10-ECSSMET-Ascent-Loading.md` — Launch Vehicle Ascent Phase Loading: Comparing Traditional and CFD-Based Approaches | Alexis Castel; Arun Prakash Ganapathy | 906–914 | Verified against the individual paper PDF, pp. 906–914. Cross-linked with the existing single-author SCLV presentation. |
+| `2026-10-ECSSMET-ShockSat.md` — Shock Response Prediction of a Spacecraft Structure Using Explicit Finite Element Analysis: Model Conversion, Damping Identification, and Test Correlation | Arun Prakash Ganapathy; Alexis Castel; Simon Martin | 794–803 | Verified against the individual paper PDF, pp. 794–803. Author order unchanged. |
+| `2026-10-ECSSMET-DFA-Diffuseness.md` — The Importance of the Degree of Diffuseness of the Achieved Acoustic Field on the Vibroacoustic Response of a Test Article from Direct Field Acoustic Testing | Marcos A. Underwood; Arloe W. Mayne III; Alexis Castel | 468–478 | Title, author formatting, and pp. 468–478 verified against the image-based paper, including visual inspection and OCR. |
 
 One additional presentation page restores access to an existing, previously unlisted public deck: **Advancing Shock Simulation: Applying the Smallwood Algorithm to Explicit Finite Element Models**, Alexis Castel, SCLV 2025. Its title, single-author attribution, year, and summary come from `files/SCLV_2025_Advanced Shock Simulation.pdf`. It is clearly a workshop presentation, separate from both the MIMO presentation and the later ShockSat paper.
 
-No proceedings extracts were hosted because the PDF could not be inspected and redistribution permission was not established. Existing public PDFs were preserved unchanged.
+The three individual PDFs already committed and publicly hosted from `master` were preserved unchanged. No additional proceedings extracts were created. Their existing PDF URLs remain stable; the three older publication-page URLs are preserved with redirects. Duplicate metadata records were replaced by those redirects.
 
 ## 4. Created and modified files
 
-The file list below is generated from the local working tree. All pre-existing publication URLs remain unchanged. No existing source file was deleted. New user-facing images are limited to the coaching-project thumbnail.
+The file list below records the initial audit working tree; the subsequent merge also retains the three ECSSMET PDF assets from master and replaces their three duplicate metadata records with redirect aliases. All pre-existing publication URLs remain unchanged. No existing source file was deleted. New user-facing images are limited to the coaching-project thumbnail.
 
 - `M` `README.md`
 - `M` `_config.yml`
@@ -159,18 +159,18 @@ Tested the local working tree based on `b83e99b`, using Ruby 3.2 and the reposit
 
 | Check | Result |
 |---|---|
-| `PATH=/workspace/shared/ruby-3.2/bin:$PATH ./scripts/jekyll-local.sh validate` | Passed: strict-front-matter Jekyll build; 29 publication records; 67 generated HTML pages; 0 schema/citation/internal-link/heading errors. The validator explicitly reports 11 bibliographic review notes. |
+| `PATH=/workspace/shared/ruby-3.2/bin:$PATH ./scripts/jekyll-local.sh validate` | Passed: strict-front-matter Jekyll build; 29 publication records; 70 generated HTML pages; 0 schema/citation/internal-link/heading errors. The validator explicitly reports 8 bibliographic review notes. |
 | Generated citation and structured-data comparison | Passed: full author order, supported publication dates, venue/conference/report fields, volume/issue/pages, PDF URLs, individual DOI fields, JSON-LD, canonical URLs, complete listings, and descending category/date order. Withheld records/presentations/abstracts have no scholarly citation tags. |
 | `npm run build:js` | Passed; regenerated the existing committed JavaScript bundle. |
 | Bash/Ruby syntax and `git diff --check` | Passed. |
 | Metadata-validator negative fixtures | Passed: duplicate article DOI, invalid category, inconsistent date, missing PDF, and duplicate author were rejected. Fixtures were isolated from the real collection. |
-| Internal links/assets/anchors | 67 HTML documents checked, including 55 themed content pages, redirects, and the two existing standalone example reports. No missing internal targets, fragment IDs, or required image descriptions in themed pages. |
+| Internal links/assets/anchors | 70 HTML documents checked, including 55 themed content pages, redirects, and the two existing standalone example reports. No missing internal targets, fragment IDs, or required image descriptions in themed pages. |
 | External links | 41 unique external URLs inventoried. Official-source checks succeeded where readable; restricted/large/bot-protected routes are listed separately as limitations. |
 | Broad Chromium rendering sweep | 55 themed content pages at 375 and 1440 pixels: 110 checks; no failed pages, broken images, horizontal page overflow, heading-level skips, or JavaScript errors. |
-| Targeted responsive/browser checks | 8 key pages at 320, 375, 768, 1024, and 1440 pixels: 40 checks passed. All 28 existing top-level local PDF downloads returned PDF content. |
+| Targeted responsive/browser checks | 8 key pages at 320, 375, 768, 1024, and 1440 pixels: 40 checks passed. All 28 original top-level local PDF downloads returned PDF content during the initial audit; the three ECSSMET PDFs were additionally checked during merge validation. |
 | Keyboard interactions | Passed: navigation Enter/Tab/Escape, profile menu Escape, skip-to-main focus, topic links, and keyboard scrolling of the supplier table at 320 pixels. |
 | Accessibility scan | axe-core 4.14.1, WCAG 2 A/AA and 2.1 AA rules, 7 key pages at 375 and 1440 pixels: no violations or incomplete checks. Mobile navigation also passed with JavaScript disabled. Automated checks do not replace a human assistive-technology review. |
-| Preservation checks | All 25 legacy publication permalinks unchanged; no pre-existing source files deleted; original PDFs unchanged. |
+| Preservation checks | All 25 initial publication permalinks unchanged, plus three newer September URLs preserved with redirects; all original PDFs and the three PDFs from master are unchanged. Duplicate metadata files were consolidated without removing their public URLs. |
 | New validation workflow | Reviewed locally; remote GitHub Actions execution was not triggered. Read-only repository permissions; no publish/deploy step. |
 
 Browser checks used the real local Jekyll server and installed Chromium. The two standalone generated coaching reports were retained and link-checked; they were not restyled or included in the themed-page accessibility sweep. The 87 MB ECSSMET proceedings document was not committed. The source changes do not depend on Playwright or axe; those were used only from scratch storage for validation.
@@ -183,7 +183,7 @@ Existing nonfatal toolchain diagnostics remain: Jekyll 3.9.3 emits a Logger init
 
 ## 6. Questions requiring input
 
-1. Provide access to the full ECSSMET 2026 proceedings PDF, or enable the relevant public-source domains in the environment, so the individual titles, author formatting, pages, summaries, and redistribution notice can be checked. Until then the three new records are explicitly provisional at the individual-paper level.
+1. The individual ECSSMET 2026 source-verification question is resolved using the three PDFs already on master. Further extraction from the full proceedings would still require checking redistribution rights; no additional extraction is planned.
 2. Confirm the official AIAA 2026-0420 record or provide its first page/bibliographic export, particularly the DOI and full author-name formatting.
 3. Confirm whether the 2013 composite-plate manuscript was also presented at DYNACOMP, and whether any full ICCS17 proceedings paper exists beyond abstract 3673. The current page describes the primary-source-confirmed abstract and the related HAL manuscript separately.
 4. Confirm the final publisher title/author order, DOI, and pagination for the 2024 NOISE-CON paper if the final record differs from the existing manuscript.
@@ -193,15 +193,15 @@ Existing nonfatal toolchain diagnostics remain: Jekyll 3.9.3 emits a Logger init
 
 ## 7. Metadata not independently verified
 
-The individual ECSSMET 2026 metadata and summaries, essential AIAA 2026 author/DOI details, the MIMO contribution's complete names, the 2013 manuscript's full proceedings status, and the final NOISE-CON 2024 publisher metadata remain unresolved as detailed above. Volume/issue/pagination for the H-Matrix proceedings item and the article DOI for the 2023 SWOT paper also remain unconfirmed.
+Essential AIAA 2026 author/DOI details, the MIMO contribution's complete names, the 2013 manuscript's full proceedings status, and the final NOISE-CON 2024 publisher metadata remain unresolved as detailed above. Volume/issue/pagination for the H-Matrix proceedings item and the article DOI for the 2023 SWOT paper also remain unconfirmed.
 
 Some older contributions have a verified title/author list and year from the original PDF but no independently confirmed individual publication day, DOI, or proceedings pagination. Those fields are omitted, and the CSV records the evidence used for every entry. An omitted DOI does not imply that no DOI exists. Degrees, professional appointments, training, mentoring, awards, and service use the existing website and the explicit information provided in this request; no private CV or account data was consulted to add claims.
 
 ## 8. Recommended improvements not implemented
 
-- Complete the unresolved source verification, then enable citation metadata for the four withheld 2026 paper records. Add paper extracts only after checking redistribution rights; do not commit the full 87 MB proceedings volume.
+- Complete the unresolved AIAA 2026 source verification before enabling its citation metadata. The three ECSSMET paper records now have verified individual metadata and citation tags. Add further paper extracts only after checking redistribution rights; do not commit the full 87 MB proceedings volume.
 - Review a future update of the locked GitHub Pages/Jekyll dependency bundle to address its Ruby/Faraday diagnostics. The theme/framework and lockfile were intentionally preserved in this change.
 - The pre-existing Dockerfile installs Bundler 2.3.26 while the lockfile specifies 2.4.19. Its image was not rebuilt or changed; if Docker becomes a supported workflow, align it with the lockfile and test it separately.
-- Live GitHub Actions execution, GitHub Pages production behavior, indexing by Google Scholar, and cross-browser Safari/Firefox behavior were not exercised because this work stayed local. The new workflow is available for review and has no deployment step.
+- The original audit stayed local. The subsequent publication step uses the existing GitHub Pages build from master; Google Scholar indexing and Safari/Firefox behavior remain outside these local checks. The new validation workflow has no deployment step.
 - The six inherited `paper1/2/3.pdf` and `slides1/2/3.pdf` theme sample assets are unlinked from the bibliography. They were left in place to preserve existing files; removal can be reviewed separately.
 - No ORCID, citation metrics, award dates, funding claims, formal supervision claims, public CV PDF, or new contact address was added without an authoritative or explicitly approved source.
