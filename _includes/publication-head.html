@@ -1,0 +1,27 @@
+{% if page.collection == 'publications' and page.citation_metadata != false and page.category != 'presentations' and page.publication_type != 'Conference abstract' %}
+<meta name="citation_title" content="{{ page.title | escape }}">
+{% for name in page.authors %}<meta name="citation_author" content="{{ name | escape }}">{% endfor %}
+<meta name="citation_publication_date" content="{{ page.publication_date | replace: '-', '/' }}">
+{% if page.category == 'journal_articles' %}<meta name="citation_journal_title" content="{{ page.venue | escape }}">{% elsif page.publication_type == 'SAE technical paper' %}<meta name="citation_technical_report_institution" content="{{ page.publisher | escape }}"><meta name="citation_technical_report_number" content="{{ page.identifier | escape }}"><meta name="citation_conference_title" content="{{ page.conference | escape }}">{% elsif page.category == 'conference_papers' %}<meta name="citation_conference_title" content="{{ page.venue | escape }}">{% elsif page.category == 'dissertations' %}<meta name="citation_dissertation_institution" content="{{ page.venue | escape }}">{% endif %}
+{% if page.volume %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
+{% if page.issue %}<meta name="citation_issue" content="{{ page.issue | escape }}">{% endif %}
+{% if page.pages %}{% assign pagination = page.pages | split: '–' %}<meta name="citation_firstpage" content="{{ pagination | first | escape }}"><meta name="citation_lastpage" content="{{ pagination | last | escape }}">{% endif %}
+{% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
+{% if page.paperurl %}<meta name="citation_pdf_url" content="{{ page.paperurl | absolute_url | escape }}">{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {% if page.category == 'dissertations' %}"Thesis"{% else %}"ScholarlyArticle"{% endif %},
+  "headline": {{ page.title | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "datePublished": {{ page.publication_date | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "author": [{% for name in page.authors %}{"@type": "Person", "name": {{ name | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+  {% if page.doi %}, "sameAs": {{ page.doi | prepend: 'https://doi.org/' | jsonify }}{% endif %}
+  {% if page.pages %}, "pagination": {{ page.pages | jsonify }}{% endif %}
+  {% if page.paperurl %}, "encoding": {"@type": "MediaObject", "encodingFormat": "application/pdf", "contentUrl": {{ page.paperurl | absolute_url | jsonify }}}{% endif %}
+  {% if page.category == 'journal_articles' %}, "isPartOf": {"@type": "Periodical", "name": {{ page.venue | jsonify }}}{% endif %}
+}
+</script>
+{% endif %}

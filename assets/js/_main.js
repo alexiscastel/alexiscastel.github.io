@@ -27,11 +27,29 @@ $(document).ready(function(){
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
+    $(".author__urls-wrapper button").toggleClass("open").attr("aria-expanded", $(".author__urls-wrapper button").hasClass("open"));
   });
 
+  $(".author__urls-wrapper").on("keydown", function(event) {
+    if(event.key === "Escape") {
+      $(".author__urls").hide();
+      $(".author__urls-wrapper button").removeClass("open").attr("aria-expanded", "false").focus();
+    }
+  });
+
+  // Opening a topic link must reveal its target even inside collapsed details.
+  function revealTopic() {
+    if(window.location.hash.indexOf("#topic-") === 0) {
+      $("details.topic-index").prop("open", true);
+      var target = document.getElementById(window.location.hash.substring(1));
+      if(target) { target.scrollIntoView(); }
+    }
+  }
+  revealTopic();
+  $(window).on("hashchange", revealTopic);
+
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({offset: -65});
+  $("a").not(".skip-link, [href*='#topic-']").smoothScroll({offset: -65});
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

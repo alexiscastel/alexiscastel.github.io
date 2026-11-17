@@ -37,3 +37,15 @@ This repo includes a helper script for local Jekyll workflows:
 - Bundler `2.4.19`
 
 The script uses repo-local bundle directories and avoids relying on global gem state.
+
+## Research and publication maintenance
+
+Publication metadata lives in `_publications/` and generates the bibliography on all public pages. See [the publication maintenance guide](docs/PUBLICATIONS.md) for the schema, evidence conventions, and handling of papers versus presentations.
+
+Run the full local check before review:
+
+```bash
+./scripts/jekyll-local.sh validate
+```
+
+The pull-request validation workflow builds and checks the site without deploying it. Keep publishing as a separate, deliberate action.

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div id="main" role="main" tabindex="-1">
+  {% include sidebar.html %}
+  <article class="page publication-page">
+    <h1 class="page__title"{% if page.title_language %} lang="{{ page.title_language }}"{% endif %}>{{ page.title | escape }}</h1>
+    <div class="page__content">
+      <h2>Recommended citation</h2>
+      <p class="publication-citation">{% include publication-citation.html publication=page %}</p>
+      {% include publication-links.html publication=page %}
+      {% if page.publication_note %}<p class="notice">{{ page.publication_note | escape }}</p>{% endif %}
+      {% if page.verification_note %}<p class="notice"><strong>Bibliographic note:</strong> {{ page.verification_note | escape }}</p>{% endif %}
+      <h2>{% if page.category == 'presentations' %}Presentation summary{% elsif page.category == 'dissertations' %}Abstract{% else %}Research summary{% endif %}</h2>
+      <div{% if page.language %} lang="{{ page.language | escape }}"{% endif %}>{{ content }}</div>
+      {% if page.topics.size > 0 %}<ul class="publication-topics" aria-label="Research topics">{% for topic in page.topics %}<li><a href="{{ '/publications-talks/' | relative_url }}#topic-{{ topic | slugify }}">{{ topic | escape }}</a></li>{% endfor %}</ul>{% endif %}
+      {% if page.related_publications.size > 0 %}
+        <h2>Related contributions</h2><ul>
+        {% for related_url in page.related_publications %}{% assign related = site.publications | where: 'permalink', related_url | first %}<li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a> — {{ related.publication_type | escape }}, {{ related.publication_date | slice: 0, 4 }}</li>{% endfor %}
+        </ul>
+      {% endif %}
+      <p><a href="{{ '/publications-talks/' | relative_url }}">All publications and presentations</a> · <a href="{{ '/research/' | relative_url }}">Research</a></p>
+    </div>
+  </article>
+</div>

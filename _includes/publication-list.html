@@ -1,0 +1,15 @@
+{% assign publications_by_date = site.publications | sort: 'date' | reverse %}
+{% assign publication_heading = include.heading_level | default: 2 %}
+{% assign entry_heading = publication_heading | plus: 1 %}
+{% for category in site.publication_category %}
+  <section aria-labelledby="{{ include.prefix | default: 'pub' }}-{{ category[0] }}">
+    <h{{ publication_heading }} id="{{ include.prefix | default: 'pub' }}-{{ category[0] }}">{{ category[1].title }}</h{{ publication_heading }}>
+    <ul class="publication-list">
+    {% for publication in publications_by_date %}
+      {% if publication.category == category[0] %}
+        {% include publication-entry.html publication=publication compact=include.compact heading_level=entry_heading %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

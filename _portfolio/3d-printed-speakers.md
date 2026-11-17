@@ -1,6 +1,6 @@
 ---
 title: "3D-Printed Speakers: Building, Testing, and Simulating"
-excerpt: "I decided to print a nice looking pair of speakers from Thingiverse.com. Following this I thought simulating the speakers with VA One would be appropriate.<br/><img src='/images/Open-Speaker-450x600.jpg'>"
+excerpt: "I decided to print a nice looking pair of speakers from Thingiverse.com. Following this I thought simulating the speakers with VA One would be appropriate.<br/><img src='/images/Open-Speaker-450x600.jpg' alt='Open enclosure of a 3D-printed speaker'>"
 permalink: /portfolio/3d-printed-speakers
 collection: portfolio
 ---
@@ -19,7 +19,7 @@ I decided to 3D print a sleek pair of speakers from [Thingiverse.com](https://ww
 </a>
 </div>
 
-### Experimental Characterization
+## Experimental Characterization
 
 To begin, I opted for an experimental approach and measured the speakers' frequency response using pink noise and the AudioTool app on my phone. Although these measurements were taken in my office (far from anechoic), they revealed some interesting insights:
 
@@ -29,7 +29,7 @@ To begin, I opted for an experimental approach and measured the speakers' freque
 
 Despite the less-than-ideal conditions (including visible room modes), the small 4-inch drivers performed surprisingly well, with no significant roll-off until around 100 Hz. This was impressive! Whether due to careful engineering or sheer luck, it motivated me to delve deeper with a more analytical approach.
 
-### Simulation with VA One
+## Simulation with VA One
 
 I simulated the speakers using VA One, employing a coupled Finite Element Model (FEM) and Boundary Element Model (BEM). The simulation covered a frequency range from 62.5 Hz to 500 Hz, solved in 1/12th octave bands.
 

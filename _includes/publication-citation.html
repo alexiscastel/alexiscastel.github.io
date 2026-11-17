@@ -1,0 +1,2 @@
+{%- assign pub = include.publication -%}
+{% include publication-authors.html publication=pub %} ({{ pub.publication_date | slice: 0, 4 }}). {% unless include.omit_title %}“{{ pub.title | escape }}.” {% endunless %}<em>{{ pub.venue | escape }}</em>{% if pub.volume %}, {{ pub.volume | escape }}{% if pub.issue %}({{ pub.issue | escape }}){% endif %}{% endif %}{% if pub.pages %}, pp. {{ pub.pages | escape }}{% endif %}{% if pub.identifier %}, {{ pub.identifier | escape }}{% endif %}. <span class="publication-type">{{ pub.publication_type | escape }}.</span>

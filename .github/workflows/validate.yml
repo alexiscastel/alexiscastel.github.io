@@ -1,0 +1,28 @@
+name: Validate website
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  jekyll:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler: '2.4.19'
+          bundler-cache: true
+      - name: Validate publication metadata
+        run: bundle exec ruby scripts/validate-publications.rb
+      - name: Build with GitHub Pages dependencies
+        run: bundle exec jekyll build --strict_front_matter
+        env:
+          JEKYLL_ENV: production
+      - name: Validate generated citations and links
+        run: |
+          bundle exec ruby scripts/validate-publications.rb --site _site
+          python3 scripts/validate-site.py

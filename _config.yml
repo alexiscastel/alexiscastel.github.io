@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Alexis Castel"
 title_separator          : "-"
 name                     : &name "Alexis Castel, Ph.D."
-description              : &description "Technical Expert @ Keysight Technologies"
+description              : &description "Computational mechanics, structural dynamics, aerospace engineering, and data-driven simulation. Research, publications, and personal projects by Alexis Castel, Ph.D."
 url                      : https://alexiscastel.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "alexiscastel/alexiscastel.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Alexis Castel, Ph.D."
   pronouns         : # example: "she/her"  
-  bio              : "Technical Expert @ Keysight Technologies"
+  bio              : "Technical Expert in Aerospace Vibro-Acoustics at Keysight Technologies"
   location         : # "Earth"
   employer         : # "ESI North America"
   uri              : # URL
@@ -75,13 +75,15 @@ author:
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
-publication_category:  
-  conferences:
-    title: 'Conference Papers'
-  manuscripts:
-    title: 'Journal Articles'
-  books:
-    title: 'Books'  
+publication_category:
+  journal_articles:
+    title: 'Peer-Reviewed Journal Articles'
+  conference_papers:
+    title: 'Conference and Technical Papers'
+  presentations:
+    title: 'Conference and Workshop Presentations'
+  dissertations:
+    title: 'Doctoral Dissertation'
 
 blog_sections:
   - title: "Energy & Environment"
@@ -173,6 +175,10 @@ exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
+  - scripts
+  - docs
+  - markdown_generator
+  - work
   - .bundle
   - .github
   - .jekyll-assets-cache
@@ -261,7 +267,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: publication
       author_profile: true
       share: false
       comments: false
@@ -300,6 +306,7 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
+  - jekyll-redirect-from
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
@@ -308,6 +315,7 @@ plugins:
 
 # Mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-redirect-from
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate

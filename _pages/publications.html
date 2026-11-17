@@ -3,43 +3,19 @@ layout: archive
 title: "Publications & Talks"
 permalink: /publications-talks/
 author_profile: true
+description: "Journal articles, conference and technical papers, workshop presentations, and doctoral research by Alexis Castel and collaborators."
 redirect_from:
   - /publications/
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-This page collects public papers and presentations. I use it as the credibility backbone of the site: public work first, confidential work details out.
-
-{% if site.talks.size > 0 %}
-  <h2>Talks and presentations</h2><hr />
-  {% for post in site.talks reversed %}
-    {% include archive-single-talk.html %}
+<p>Papers, presentations, and doctoral research, grouped by contribution type and listed newest first. Conference papers, technical papers, and published abstracts are labeled individually; inclusion here does not imply peer review.</p>
+<p>See <a href="{{ site.author.googlescholar }}">Google Scholar</a> for my academic profile, or <a href="{{ '/research/' | relative_url }}">Research</a> for the connections between these contributions.</p>
+<nav aria-label="Publication categories"><ul class="publication-category-links">{% for category in site.publication_category %}<li><a href="#pub-{{ category[0] }}">{{ category[1].title }}</a></li>{% endfor %}</ul></nav>
+{% include publication-list.html %}
+<details class="topic-index">
+  <summary>Browse publications by research topic</summary>
+  {% assign topics = site.publications | map: 'topics' | join: '|' | split: '|' | uniq | sort %}
+  {% for topic in topics %}
+    <h2 id="topic-{{ topic | slugify }}">{{ topic | escape }}</h2>
+    <ul>{% for publication in publications_by_date %}{% if publication.topics contains topic %}<li><a href="{{ publication.url | relative_url }}">{{ publication.title | escape }}</a> ({{ publication.publication_date | slice: 0, 4 }})</li>{% endif %}{% endfor %}</ul>
   {% endfor %}
-{% endif %}
-
-<h2>Publications</h2><hr />
-
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h3>{{ category[1].title }}</h3>
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html show_details=false %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html show_details=false %}
-  {% endfor %}
-{% endif %}
+</details>

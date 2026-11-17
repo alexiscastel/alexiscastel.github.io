@@ -1,0 +1,4 @@
+{%- for name in include.publication.authors -%}
+  {%- unless forloop.first -%}; {% endunless -%}
+  {%- if name == 'Alexis Castel' or name == 'A. Castel' or name == 'Castel, A.' -%}<strong>{{ name | escape }}</strong>{%- else -%}{{ name | escape }}{%- endif -%}
+{%- endfor -%}

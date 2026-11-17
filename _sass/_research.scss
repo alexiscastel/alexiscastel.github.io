@@ -1,0 +1,39 @@
+/* Publication and research details extend the existing theme. */
+.publication-list { list-style: none; padding-left: 0; }
+.publication-entry { margin-bottom: 2rem; overflow-wrap: anywhere; }
+.publication-entry h3, .publication-entry h4 { font-size: 1em; margin: 1.5em 0 .5em; line-height: 1.4; }
+.publication-entry p { margin-bottom: .5em; }
+.publication-citation { line-height: 1.6; }
+.publication-type { color: #555f65; font-size: .9em; }
+.publication-links { display: flex; flex-wrap: wrap; gap: .25em 1em; margin: .5em 0 1em; font-size: .9em; overflow-wrap: anywhere; }
+.publication-topics { display: flex; flex-wrap: wrap; gap: .25em .75em; list-style: none; padding: 0; margin: .75em 0; font-size: .8em; }
+.publication-topics li { margin: 0; }
+.publication-topics a { color: #555f65; }
+.publication-category-links { padding-left: 1.25em; }
+.topic-index { margin: 2em 0; }
+.topic-index summary { cursor: pointer; font-weight: bold; }
+.page, .archive { overflow-wrap: break-word; min-width: 0; }
+.page__title { line-height: 1.2; }
+:target { scroll-margin-top: 90px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #26758b; outline-offset: 3px; }
+.skip-link { position: fixed; left: 1em; top: -100px; z-index: 1000; padding: .75em 1em; color: #fff; background: #263d47; }
+.skip-link:focus { top: .5em; }
+.author__urls { z-index: 20; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.no-js .greedy-nav .visible-links { display: flex; flex-wrap: wrap; }
+.no-js .greedy-nav .visible-links li { display: block; }
+.no-js .masthead { position: static; }
+.no-js body { padding-top: 0; }
+.no-js .author__urls-wrapper button { display: none; }
+.no-js .greedy-nav button { display: none; }
+.no-js .author__urls { display: block; position: static; }
+@media print { .publication-topics, .publication-category-links, .skip-link { display: none; } }
+
+.navicon { display: block; }
+
+.author__name { font-weight: bold; }
+
+.page__meta, .archive__subtitle, .page__footer, .page__footer a, .page__footer-follow .social-icons { color: #555f65; }
+
+.table-scroll { max-width: 100%; overflow-x: auto; margin-bottom: 1em; }
+.table-scroll:focus-visible { outline: 3px solid #26758b; outline-offset: 3px; }

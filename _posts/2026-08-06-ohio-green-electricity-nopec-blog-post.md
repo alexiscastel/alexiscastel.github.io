@@ -53,6 +53,8 @@ This is where the contracts differed.
 
 The following rates were the offers I reviewed in early August 2026. They are a snapshot, not permanent recommendations.
 
+<div class="table-scroll" role="region" aria-label="Electricity supplier comparison; scroll horizontally if needed" tabindex="0" markdown="1">
+
 | Supplier and product | Rate | Initial term | Exit fee | Environmental claim | Independent certification promised |
 |---|---:|---:|---:|---|---|
 | CleanSky Embrace Green | 10.19¢/kWh | 24 months | $150 | RECs matching 100% of use | No; the contract explicitly allowed non-certified RECs |
@@ -62,6 +64,8 @@ The following rates were the offers I reviewed in early August 2026. They are a 
 | Inspire | 10.79¢/kWh | 24 months | $0 | Wind, solar, or low-impact hydro RECs | Not Green-e certified |
 | AEP ECO-Advantage | 11.45¢/kWh | 36 months | $0 | 100% national wind RECs | **Green-e Energy certified** |
 | IGS | 13.99¢/kWh | 24 months | $75 | Green offer | Too expensive to remain competitive in my comparison |
+
+</div>
 
 A few things stood out.
 

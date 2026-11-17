@@ -36,7 +36,15 @@ case "${COMMAND}" in
   build)
     bundle_setup
     cd "${ROOT_DIR}"
-    "${BUNDLE_CMD[@]}" exec jekyll build
+    "${BUNDLE_CMD[@]}" exec jekyll build "${@:2}"
+    ;;
+  validate)
+    bundle_setup
+    cd "${ROOT_DIR}"
+    "${BUNDLE_CMD[@]}" exec ruby scripts/validate-publications.rb
+    "${BUNDLE_CMD[@]}" exec jekyll build --strict_front_matter
+    "${BUNDLE_CMD[@]}" exec ruby scripts/validate-publications.rb --site _site
+    python3 scripts/validate-site.py
     ;;
   serve)
     bundle_setup
@@ -49,10 +57,11 @@ case "${COMMAND}" in
     ;;
   *)
     cat <<'EOF'
-Usage: scripts/jekyll-local.sh [install|build|serve|clean]
+Usage: scripts/jekyll-local.sh [install|build|validate|serve|clean]
 
   install  Install/update the local bundle
   build    Build the site into _site
+  validate Check metadata, build, generated citations, and internal links
   serve    Run the local Jekyll server with livereload
   clean    Remove the generated _site directory
 EOF

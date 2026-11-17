@@ -1,0 +1,8 @@
+{%- assign pub = include.publication -%}
+<div class="publication-links">
+  {% if pub.doi %}<a href="https://doi.org/{{ pub.doi | escape }}">DOI: {{ pub.doi | escape }}</a>{% endif %}
+  {% if pub.proceedings_doi %}<a href="https://doi.org/{{ pub.proceedings_doi | escape }}">Proceedings DOI: {{ pub.proceedings_doi | escape }}</a>{% endif %}
+  {% if pub.paperurl %}<a href="{{ pub.paperurl | relative_url | escape }}">{% if pub.category == 'dissertations' %}Dissertation PDF{% elsif pub.publication_type == 'Conference abstract' %}Related manuscript PDF{% else %}{{ pub.pdf_label | default: 'Paper PDF' | escape }}{% endif %}</a>{% endif %}
+  {% if pub.slidesurl %}<a href="{{ pub.slidesurl | relative_url | escape }}">Presentation PDF</a>{% endif %}
+  {% if pub.sourceurl %}<a href="{{ pub.sourceurl | escape }}">{% if pub.proceedings_doi %}Official proceedings{% else %}Publication record{% endif %}</a>{% endif %}
+</div>

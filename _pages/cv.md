@@ -3,23 +3,33 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+description: "Academic and professional CV of Alexis Castel, Ph.D.: education, computational mechanics research, industry appointments, teaching, mentoring, publications, and service."
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+Mechanical engineer and researcher. **Technical Expert in Aerospace Vibro-Acoustics, Keysight Technologies.** [Professional contact and profile](https://www.linkedin.com/in/{{ site.author.linkedin }}/) · [Google Scholar]({{ site.author.googlescholar }})
 
-You can find my resume and connect with me on [LinkedIn](https://www.linkedin.com/in/alexiscastel/).
+## Research interests
 
-Education
-======
-* Ph.D. in Mechanical Engineering, University of Burgundy, France, 2013
-* Master of Business Administration, University of Burgundy, France, 2013
-* Master of Science in Material Sciences, Acoustics, Vibration, and Numerical Methods, University of Burgundy, France, 2010
-* Master of Engineering in Mechanics, University of Burgundy, France, 2010
+Computational solid mechanics; nonlinear structural dynamics and shock propagation; explicit finite element analysis; composite and viscoelastic structures; contact, friction, and energy dissipation; physics-guided machine learning; Gaussian process surrogate modeling; Bayesian optimization and adaptive sampling; reduced-order and multiphysics modeling; experimental correlation and uncertainty quantification; aerospace structural environments.
 
-Work experience
-======
+## Education
+
+- **Ph.D. in Mechanical Engineering**, University of Burgundy (Université de Bourgogne), France, 2013. Dissertation: *Comportement vibratoire de structures composites intégrant des éléments amortissants*. Defended November 21, 2013. [Dissertation and repository record]({{ '/publication/2013-11-21-Comportement-vibratoire-de-structures-composites' | relative_url }}).
+- **Master of Business Administration**, University of Burgundy, France, 2013.
+- **Master of Science in Material Sciences, Acoustics, Vibration, and Numerical Methods**, University of Burgundy, France, 2010.
+- **Master of Engineering in Mechanics**, University of Burgundy, France, 2010.
+
+## Selected research contributions
+
+- **Nonlinear shock and interfaces:** explicit finite element modeling of shock propagation, frictional dissipation, and composite fracture in the [AIAA 2025 paper]({{ '/publication/2025-01-10-Scitech-Shock' | relative_url }}); research contribution and manuscript mentorship for the [ECSSMET 2026 ShockSat paper]({{ '/publication/2026-10-ECSSMET-ShockSat' | relative_url }}).
+- **Adaptive computational methods:** Gaussian process surrogate modeling and Bayesian optimization for probabilistic overall-response estimation in the [ECSSMET 2024 paper]({{ '/publication/2024-09-27-ECSSMET2024' | relative_url }}). The example response curves required approximately five times fewer frequency evaluations.
+- **Composite and viscoelastic mechanics:** multilayer plate formulations, transverse shear warping functions, energy-based damping analysis, and genetic-algorithm-based inverse identification of material properties during doctoral research.
+- **Aerospace simulation and correlation:** launch vehicle and payload environments, hybrid FE-SEA reduction, coupled structural-acoustic models, direct-field acoustic testing, and comparison with measurements. See [Research]({{ '/research/' | relative_url }}) for links to public work.
+
+## Research and professional appointments
+
 * 2022-present: Technical Expert Aerospace Vibro-Acoustics - <i>Keysight Technologies | Cleveland, OH, USA</i>
   * Provides technical expertise in structural dynamics, vibro-acoustics, and acoustic simulation workflows for aerospace applications.
   * Works on applied simulation methods for shock, damping, coupled acoustic-structural models, probabilistic workflows, and engineering decision support.
@@ -57,42 +67,34 @@ Work experience
   * Published scientific articles in the fields of vibration, damping, and composite structures.
   * Developed numerical models for damped multilayer plates and energy-based analysis of dynamic systems.
 
-* 2010-2013: Vibration Lab Instructor - <i>Institut Supérieur de l'Automobile et des Transports, University of Burgundy | Nevers, France</i>
-  * Taught and graded vibration laboratory sessions for engineering students and modernized existing lab procedures.
-
 * 2008: Application Engineer Intern - <i>National Instruments | Nanterre, France</i>
   * Developed demonstration systems using NI-PXI, CompactRIO, and NI-DAQ platforms and gained hands-on experience with LabVIEW, LabVIEW RT, and LabVIEW FPGA.
 
-Skills
-======
-* Aerospace vibro-acoustics and structural dynamics
-* Numerical simulation
-  * Finite Element Method
-  * Boundary Element Method
-  * Statistical Energy Analysis
-  * Hybrid FE-SEA methods
-  * Shock simulation
-  * Damping modeling
-* Experimental methods
-  * Data acquisition
-  * Signal processing
-  * Transfer path analysis
-  * Direct Field Acoustic Testing (DFAT)
-  * High-power reverberation room testing
-* High-performance computing
-* Mechanical modeling research
-* Project and methodology development
-* Technical training and communication
-* Languages: English, French
-* Engineering software: VA One, NX NASTRAN/FEMAP, OpenFOAM, VPS, CATIA V5, SolidWorks, NOVA, FOAM-X
-* Programming: Python, MATLAB, LabVIEW, Visual Basic
+## Teaching and mentoring
 
-Publications
-======
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+- **Vibration Lab Instructor, 2010–2013**, Institut Supérieur de l'Automobile et des Transports, University of Burgundy, Nevers, France. Taught and graded vibration laboratory sessions for approximately 60 engineering students per year and modernized lab procedures.
+- Developed and delivered aerospace engineering training, including regular training for NASA engineers.
+- Technical coaching and research mentorship of application engineers; manuscript preparation mentorship for Arun Prakash Ganapathy on the 2026 ShockSat contribution.
 
-Service and leadership
-======
-* Founding member and President of <i>La Petite École Française de Cleveland</i>, a non-profit organization dedicated to teaching French to children of French-speaking families in the Cleveland area.
+## Publications
+
+{% include publication-list.html compact=true prefix="cv-pub" heading_level=3 %}
+
+## Honors and awards
+
+- Engineering Excellence Awards, ZIN Technologies.
+
+## Professional and community service
+
+- Founding member and former President, *La Petite École Française de Cleveland*, a nonprofit organization teaching French to children of French-speaking families in the Cleveland area.
+- Former member, American Institute of Aeronautics and Astronautics (AIAA).
+
+## Research methods and technical expertise
+
+- **Computational methods:** finite elements, boundary elements, statistical energy analysis, hybrid FE-SEA, explicit shock simulation, damping models, coupled and reduced-order models.
+- **Data-driven methods:** Gaussian processes, Bayesian optimization, adaptive sampling, probabilistic response estimation, inverse identification, uncertainty quantification.
+- **Experimental methods:** data acquisition, signal processing, transfer path analysis, direct-field acoustic testing, high-power reverberation room testing, and simulation-to-test correlation.
+- **Engineering practice:** high-performance computing, project and methodology development, technical training, and scientific communication.
+- **Software:** VA One, NX NASTRAN/FEMAP, OpenFOAM, VPS, CATIA V5, SolidWorks, NOVA, FOAM-X.
+- **Programming:** Python, MATLAB, LabVIEW, Visual Basic.
+- **Languages:** English and French.

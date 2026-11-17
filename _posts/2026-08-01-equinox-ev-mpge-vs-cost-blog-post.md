@@ -1,4 +1,5 @@
 ---
+mathjax: true
 layout: single
 title: "My EV Gets 96 MPGe—and Costs the Same as a 52-MPG Gas Car"
 date: 2026-08-06
@@ -188,5 +189,5 @@ The garage values were digitized from monthly Emporia charts. The April 2025 acq
 
 [^epa-testing]: [U.S. EPA, “Fuel Economy and EV Range Testing”](https://www.epa.gov/greenvehicles/fuel-economy-and-ev-range-testing). EPA explains the 33.7-kWh gallon equivalent and states that MPGe includes Level 2 charging losses.
 [^chevy-energy]: [Chevrolet, “In-Vehicle Energy App”](https://www.chevrolet.com/support/vehicle/ev-charging/battery/energy-app).
-[^fueleconomy-fwd]: [FuelEconomy.gov, 2024 Chevrolet Equinox EV FWD](https://www.fueleconomy.gov/m/m.do?action=getMenuOptions&id=38524&make=Chevrolet&model=Equinox+EV+FWD&year=2024).
+[^fueleconomy-fwd]: [FuelEconomy.gov, 2024 Chevrolet Equinox EV FWD](https://www.fueleconomy.gov/feg/noframes/47814.shtml).
 [^awd-rating]: [Car and Driver, 2024 Chevrolet Equinox EV test](https://www.caranddriver.com/reviews/a60926272/2024-chevrolet-equinox-ev-test/), reporting the EPA combined rating for the tested AWD model.

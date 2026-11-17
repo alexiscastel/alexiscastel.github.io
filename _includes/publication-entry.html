@@ -1,0 +1,9 @@
+{% assign pub = include.publication %}
+<li class="publication-entry">
+  <h{{ include.heading_level | default: 3 }}><a href="{{ pub.url | relative_url }}">{{ pub.title | escape }}</a></h{{ include.heading_level | default: 3 }}>
+  <p class="publication-citation">{% include publication-citation.html publication=pub omit_title=true %}</p>
+  {% include publication-links.html publication=pub %}
+  {% unless include.compact %}
+    {% if pub.topics.size > 0 %}<ul class="publication-topics" aria-label="Research topics">{% for topic in pub.topics %}<li><a href="{{ '/publications-talks/' | relative_url }}#topic-{{ topic | slugify }}">{{ topic | escape }}</a></li>{% endfor %}</ul>{% endif %}
+  {% endunless %}
+</li>
